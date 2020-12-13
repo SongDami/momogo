@@ -18,6 +18,11 @@
     margin-bottom: 15px;
 }
 
+.aa {
+    height: 300px;
+    line-height: 300px;
+}
+
 .menu_img {
     float: left;
     width: 300px;
@@ -27,7 +32,7 @@
 
 .menu {
     width: 460px;
-    height: 300px;
+    vertical-align: middle;
 }
 
 .submenu {
