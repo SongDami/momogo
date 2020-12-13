@@ -1,3 +1,38 @@
-.menu_img {
-    
+#wrap {
+    width: 1200px;
+    margin: auto;
 }
+
+.week {
+    margin: auto;
+    width: 800px;
+}
+
+.day {
+    padding: 20px 0;
+}
+
+.date {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.menu_img {
+    float: left;
+    width: 300px;
+    height: 300px;
+    margin-right: 20px;
+}
+
+.menu {
+    width: 460px;
+    height: 300px;
+}
+
+.submenu {
+    font-size: 30px;
+    line-height: 35px;
+    list-style: inside;
+}
+
