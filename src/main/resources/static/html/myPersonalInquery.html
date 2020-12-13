@@ -1,0 +1,139 @@
+
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>momogo myPage</title>
+    </head>
+
+
+<div class="myPersonalInquery__sec">
+                                    <div class="inquery__sec">
+                                        <h3 class="inquery__title">분류 <span class="import">*</span></h3>
+                                        
+                                        <div class="input-box">
+                                            <div class="hd__custom-select box460">
+                                                <select name="Q_TYPE" id="Q_TYPE" title="문의 분류" validation="required">
+                                                    <option value="">선택</option>
+                                                <option value="202">영양상담</option><option value="33">배송</option><option value="72">주문/결제</option><option value="35">취소문의</option><option value="36">교환</option><option value="37">반품</option><option value="183">환불</option><option value="222">회원정보</option><option value="34">상품정보</option><option value="224">서비스문의</option><option value="68">기타문의</option><option value="223">명절선물세트</option></select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="inquery__sec orderNumber">
+                                        <h3 class="inquery__title">주문번호</h3>
+                                        
+                                        <div class="input-box">
+                                            <input type="text" class="input__text box460" id="ODID" readonly="">
+                                            <input type="hidden" id="OD_ORDER_ID">
+                                            <button type="button" class="btn-init white" id="orderNumberSaerch">조회</button>
+
+                                            <p class="txt">
+                                                * 관련된 주문건이 있는 경우 조회하여 선택해 주세요.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="inquery__sec e-mail">
+                                        <h3 class="inquery__title">이메일 <span class="import">*</span></h3>
+                                        
+                                        <div class="input-box">
+                                            <div class="email__box">
+                                                <input type="text" name="Q_EMAIL1" id="Q_EMAIL1" class="input__text" title="이메일" placeholder="이메일"> @
+                                                <input type="email" class="input__text input_mail" name="Q_EMAIL3" id="Q_EMAIL3" validation="required" title="이메일">
+
+                                                <div class="hd__custom-select">
+                                                    <select name="Q_EMAIL2" id="Q_EMAIL2">
+                                                        <option value="">직접입력</option>
+                                                        <option value="naver.com">naver.com</option>
+                                                        <option value="gmail.com">gmail.com</option>
+                                                        <option value="hotmail.com">hotmail.com</option>
+                                                        <option value="hanmail.net">hanmail.net</option>
+                                                        <option value="daum.net">daum.net</option>
+                                                        <option value="nate.com">nate.com</option>
+                                                    </select>
+                                                </div>
+                                                
+                                                <input type="hidden" name="Q_EMAIL" id="Q_EMAIL" value="sdm07743@naver.com">
+                                            </div>
+
+                                            <div class="hd-checkbox">
+                                                <input type="checkbox" id="mailAlarm" class="hidden" checked="checked" data-checked="y">
+                                                <label for="mailAlarm">답변 알람 수신</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="inquery__sec cellphone">
+                                        <h3 class="inquery__title">휴대폰번호 <span class="import">*</span></h3>
+
+                                        <div class="input-box">
+                                            <div class="cellphone__number">
+                                            	<div class="hd__custom-select phone">
+				                                    <select class="input_select memberSelect" id="Q_MOBILE1">
+							                    		<option value="">선택</option>
+							                    		<option value="010">010</option>
+							                    		<option value="011">011</option>
+							                    		<option value="016">016</option>
+							                    		<option value="017">017</option>
+            											<option value="018">018</option>
+							                    		<option value="019">019</option>
+							                    	</select>
+				                                </div> -
+                                                <!-- <input type="text" id="Q_MOBILE1" class="input__text" maxlength="3" numberonly> - -->
+                                                <input type="text" id="Q_MOBILE2" class="input__text" maxlength="4" numberonly=""> -
+                                                <input type="text" id="Q_MOBILE3" class="input__text" maxlength="4" numberonly="">
+                                                <input type="hidden" id="Q_MOBILE" value="010-5582-0743">
+                                            </div>
+
+                                            <div class="hd-checkbox">
+                                                <input type="checkbox" id="phoneAlarm" class="hidden" checked="checked" data-checked="y">
+                                                <label for="phoneAlarm">답변 알람 수신</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="inquery__sec">
+                                        <h3 class="inquery__title">제목 <span class="import">*</span></h3>
+
+                                        <div class="input_type">
+                                            <input type="text" class="input__text" name="Q_TITLE" id="Q_TITLE" title="제목" placeholder="제목을 입력해주세요." validation="required">
+                                        </div>
+                                    </div>
+
+                                    <div class="inquery__sec">
+                                        <h3 class="inquery__title">내용 <span class="import">*</span></h3>
+                                        
+                                        <div class="textarea_box">
+                                            <textarea class="input__textarea" name="QUESTION" id="QUESTION" title="내용" placeholder="문의하실 내용을 입력해주세요." validation="required"></textarea>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="inquery__sec">
+                                        <h3 class="inquery__title">첨부파일</h3>
+                                        
+                                        <div class="file_list">
+                                            <ul>
+                                                <li>
+                                                    <label for="file1" class="image-box">
+                                                        <input type="file" title="파일찾기" class="input_file hidden" id="file1" name="file1" accept=".jpg, .png" data-maxmemory-mb="10">
+                                                        
+                                                        <img src="/front_pc/images/img_comm_preview.png" alt="">
+                                                        
+                                                        <button type="button" class="btn_icon del">
+                                                            <span class="hidden">삭제</span>
+                                                        </button>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                            
+                                            <div class="file_info">
+                                                <p>* 파일형식은 이미지파일(jpg, png)로 제출 가능합니다.</p>
+                                                <p>* 파일 용량은 최대 10MB 까지 가능합니다.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                
+    </body>
+</html>

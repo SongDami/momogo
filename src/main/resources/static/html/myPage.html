@@ -1,3 +1,10 @@
+
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>momogo myPage</title>
+    </head>
+
 <section class="sub-cont__sec myWelcome">
     <h3 class="myWelcome__info">
         <span class="myWelcome__info__name"><em>모모고</em>님 반갑습니다.</span>
@@ -17,40 +24,56 @@
 
     </ul>
 </section>
+<section class="sub-cont__sec lastOrder">
+    <h3 class="sub-cont__title">최근주문내역</h3>
 
-<aside class="snb">
-    <h3 class="hidden">서브메뉴</h3>
+    <div id="dvListArea"><!-- 주문내역 없는 경우 -->
+        <div class="none-list">
+            <div class="none-list__inner">
+                <p class="none-list__txt">주문 내역이 없습니다.</p>
+            </div>
+        </div>
+    </div>
 
-    <ul class="snb-box myPageBox">
-        <li class="snb-box__list">
-            <ul class="snb-box__inner">
-                <li class="snb-box__inner__list" id="myOrderList"><a href="/myPage/myOrderList" id="myOrderListId">주문/배송 조회·변경</a></li>
-                
-	                <li class="snb-box__inner__list" id="myClaimList"><a href="/myPage/myClaimList">취소/교환/반품 조회</a></li>
-	                <li class="snb-box__inner__list" id="myShippingItemList"><a href="/myPage/myShippingItemList">일자별 배송상품 조회</a></li>
-                
-            </ul>
-        </li>
-		
-        <li class="snb-box__list">
-            <ul class="snb-box__inner">
-                <li class="snb-box__inner__list" id="myInqueryList"><a href="/myPage/myInqueryList">1:1 문의 내역</a></li>
-                <li class="snb-box__inner__list" id="myItemQna"><a href="/myPage/myItemQna">나의 상품문의</a></li>
 
-            </ul>
-        </li>
+    </section>
 
-        <li class="snb-box__list">
-            <ul class="snb-box__inner">
-                <li class="snb-box__inner__list" id="myInfo"><a href="/myPage/myInfoCheckPW?TYPE=1">회원정보 수정</a></li>
-                <li class="snb-box__inner__list" id="myShippingAddrList"><a href="/myPage/myShippingAddrList">배송지 관리</a></li>
+    <aside class="snb">
+        <h3 class="hidden">서브메뉴</h3>
 
-		                <li class="snb-box__inner__list on" id="withDraw"><a href="/myPage/myInfoCheckPW?TYPE=2">회원 탈퇴</a></li>
-                	
-					                	
-                
-            </ul>
-        </li>
-     
-    </ul>
-</aside>
+        <ul class="snb-box myPageBox">
+            <li class="snb-box__list">
+                <ul class="snb-box__inner">
+                    <li class="snb-box__inner__list" id="myOrderList"><a href="/myPage/myOrderList" id="myOrderListId">주문/배송 조회·변경</a></li>
+
+                    <li class="snb-box__inner__list" id="myClaimList"><a href="/myPage/myClaimList">취소/교환/반품 조회</a></li>
+                    <li class="snb-box__inner__list" id="myShippingItemList"><a href="/myPage/myShippingItemList">일자별 배송상품 조회</a></li>
+
+                </ul>
+            </li>
+
+            <li class="snb-box__list">
+                <ul class="snb-box__inner">
+                    <li class="snb-box__inner__list" id="myInqueryList"><a href="/myPage/myInqueryList">1:1 문의 내역</a></li>
+                    <li class="snb-box__inner__list" id="myItemQna"><a href="/myPage/myItemQna">나의 상품문의</a></li>
+
+                </ul>
+            </li>
+
+            <li class="snb-box__list">
+                <ul class="snb-box__inner">
+                    <li class="snb-box__inner__list" id="myInfo"><a href="/myPage/myInfoCheckPW?TYPE=1">회원정보 수정</a></li>
+                    <li class="snb-box__inner__list" id="myShippingAddrList"><a href="/myPage/myShippingAddrList">배송지 관리</a></li>
+
+                    <li class="snb-box__inner__list on" id="withDraw"><a href="/myPage/myInfoCheckPW?TYPE=2">회원 탈퇴</a></li>
+
+
+
+                </ul>
+            </li>
+
+        </ul>
+    </aside>
+
+    </body>
+</html>
