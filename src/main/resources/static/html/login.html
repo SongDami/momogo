@@ -1,0 +1,77 @@
+<link rel="stylesheet" href="<%=request.getContextPath()%>/assets/plugins/sweetalert/sweetalert2.min.css">
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>momogo login</title>
+
+
+</head>
+
+<link rel="stylesheet" href="<%=request.getContextPath()%>/assets/css/reset.css?ver=<%=System.currentTimeMillis()%>" />
+<link rel="stylesheet" href="<%=request.getContextPath()%>/assets/css/login_style.css?ver=<%=System.currentTimeMillis()%>" />
+
+
+
+<body>
+
+    <form class="login-form" id="login-form" method="post" action="${pageContext.request.contextPath}/2depth/login_ok.do">
+        <h1>로그인</h1>
+        <p>로그인을 하시면 다양한 혜택을 누리실 수 있습니다.</p>
+  <div class="id-group">
+    <div class="id">
+        <div class="user">
+
+      <input type="text" name="user_id" class="id-control" id="user_id" placeholder="&nbsp;&nbsp;아이디">
+    </div>
+  </div>
+  <div class="pw-group">
+
+    <div class="pw">
+        <div class="key">
+      
+      <input type="password" name="user_pw" class="pw-control" id="user_pw" placeholder="&nbsp;&nbsp;비밀번호">
+    </div>
+    <div>
+      <input type="checkbox" name="idsave" value="idsave">아이디 저장
+    </div>
+  </div>
+
+  <div class="login-button-group">
+    <div class="login-button">
+      <button type="submit" class="btn login-btn">로그인</button>
+    </div>
+  </div>
+
+    <div class="joinset">
+      <button type="button" class="btn join-btn"><a href="<%=request.getContextPath()%>/3depth/join.do">아이디 찾기</button></a>
+      <p>|</p>
+      <button type="button" class="btn join-btn"><a href="<%=request.getContextPath()%>/3depth/join.do">비밀번호 찾기</button></a>
+      <p>|</p>
+      <button type="button" class="btn join-btn"><a href="<%=request.getContextPath()%>/3depth/join.do">회원가입</button></a>
+    </div>
+
+</form>
+
+<script src="<%=request.getContextPath()%>/assets/plugins/sweetalert/sweetalert2.all.min.js"></script>
+<script type="text/javascript">
+
+$(function() {
+    $("#login-form").ajaxForm(function(json) {
+        if(json.result == "FAIL") {
+            alert ("아이디나 비밀번호를 확인하세요.");
+            return false;
+        }
+        
+        alert("로그인 되셨습니다.")
+        
+        // 새로고침 수행
+        window.location.reload();
+    });
+});
+
+</script>
+
+
+<script src="https://kit.fontawesome.com/f78786fc85.js" crossorigin="anonymous"></script>
+
+</body>
