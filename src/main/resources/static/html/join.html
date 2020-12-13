@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
     <title>momogo</title>
     <!-- 크로스 브라우징 호환성 부분 시작 -->
-    <link rel="stylesheet" type="text/css" href="css/reset.css" />
-    <!-- 크로스 브라우징 호환성 부분 끝 -->
-    <link rel="stylesheet" type="text/css" href="../css/css완료/join_style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="../css/join.css" />
+
 </head>
 
 <body>
@@ -19,25 +19,26 @@
       <div class="join_body">
         <hr />
          <div class="title">
-
             <span class="title_name">
                회원 정보 입력(필수)&nbsp;</span>
          </div>
         <hr />
-   <form id="join_form" method="post" action="${pageContext.request.contextPath}/3depth/join_ok.do">
+   <form id="join_form" class = "join_form" method="post" >
          <input type="hidden" id="checked_user_id" value="">
          <input type="hidden" id="checked_email" value="">
          <input type="hidden" id="checked_nick" value="">
          <div class="userid">
             <p>아이디:</p>
             <input type="text" id="user_id" name="user_id" placeholder="*5~20자의 영문 소문자, 숫자만 사용 가능합니다.">
-            <button class ="idcheck" id="idcheck" type="button">중복확인</button>
-             <p>&nbsp;</p>
+            <button class ="check" id="idcheck" type="button">중복확인</button>
+
          </div>
 
          <div class="userpw">
             <p>비밀번호:</p>
             <input type="password"  id="user_pw" name="user_pw" placeholder="*비밀번호를 입력하세요.">
+        </div>
+        <div class="userpwre">
             <p>&nbsp;</p>
             <input class="pd" type="password"  id="userpw_re" name="userpw_re" placeholder="*비밀번호를 다시 입력하세요.">
              <p>&nbsp;</p>
@@ -45,8 +46,8 @@
 
          <div class="useremail">
             <p>이메일:</p>
-            <input type="email"  id="email" name="email" >@<input type="email"  id="email" name="email" >
-            <select name="email2">
+            <input type="email"  id="email" name="email" > @ <input type="email"  id="email" name="email" >
+            <select class="useremail" name="email2">
                 <option value="choose">직접입력</option>
                 <option value="naver">naver.com</option>
                 <option value="gmail">gmail.com</option>
@@ -56,8 +57,8 @@
                 <option value="nate">nate.com</option>
             </select>
 
-            <button class ="emailcheck" id="emailcheck" type="button">중복확인</button>
-            <p>&nbsp;</p>
+            <button class ="check" id="emailcheck" type="button">중복확인</button>
+
 
          </div>
 
@@ -70,19 +71,21 @@
          <div class="usernick">
             <p>닉네임:</p>
             <input type="text"  id="nick" name="nick"  placeholder="*8자 이내의 영문, 한글, 숫자만 사용 가능합니다.">
-            <button class ="nickcheck" id="nickcheck" type="button">중복확인</button>
-             <p>&nbsp;</p>
+            <button class ="check" id="nickcheck" type="button">중복확인</button>
+
          </div>
 
          <div class="userphone">
             <p>휴대폰번호:</p>
             <input type="text"  id="tel" name="tel" placeholder="ex)01012345678">
-             <p>&nbsp;</p>
          </div>
          <hr />
 
-         <button type="button">취소</button>
-         <div class="join_button"><button type="submit" id="btn_save">회원가입하기</button></div>
+        <div class="join_button">
+         <button class="cancel_btn" type="button">취소</button>
+         <button class="join_btn" type="submit" id="btn_save">회원가입하기</button>
+     </div>
+
          </form>
       </div>
       
