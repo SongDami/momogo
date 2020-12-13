@@ -18,9 +18,10 @@
     margin-bottom: 15px;
 }
 
-.aa {
+.menu-div {
     height: 300px;
-    line-height: 300px;
+    vertical-align: middle;
+    display: table-cell;
 }
 
 .menu_img {
