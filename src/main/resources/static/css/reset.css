@@ -150,6 +150,12 @@ table {
     border-spacing: 0;
 }
 
+
+/* 추가 */
+a {
+    text-decoration: none;
+}
+
 .clearfix::after {
     content: '';
     display: block;
