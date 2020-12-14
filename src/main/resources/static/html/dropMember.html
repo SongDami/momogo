@@ -3,70 +3,75 @@
 <head>
     <meta charset="UTF-8" />
     <title>momogo myPage</title>
-    </head>
+</head>
+
+<link rel="stylesheet" type="text/css"  href="../css/dropMember.css">
+<link rel="stylesheet" type="text/css"  href="../css/reset.css">
+
+<div class="container">
     <h2 class="hd__page-title">회원탈퇴</h2>
-    <link rel="stylesheet" type="text/css"  href="../css/main.css">
+<div class="withDraw__title"><h3>
+그동안 모모고를 이용해 주셔서 감사합니다.</h3>
+<p>회원 탈퇴 하시기 전 다음 사항을 숙지하시기 바랍니다.</p></div>
 
-<h3 class="withDraw__title">
-                              		  그동안 그리팅몰을 이용해 주셔서 감사합니다.
-                                <span>회원 탈퇴 하시기 전 다음 사항을 숙지하시기 바랍니다.</span>
-                            </h3>
 <ul class="withDraw__notice">
-                                <li>
-                                    <strong class="withDraw__notice__title">기존 아이디로 재가입이 불가능합니다.</strong>
-                                    <span class="withDraw__notice__desc">회원탈퇴 신청 시, 해당 아이디는 탈퇴처리되며 동일한 아이디로 재가입할 수 없습니다.</span>
-                                    <span class="withDraw__notice__desc">재가입 시 새로운 아이디로 가입이 가능합니다.</span> 
-                                </li>
+    <li>
+        <strong class="withDraw__notice__title">1. 기존 아이디로 재가입이 불가능합니다.</strong>
+        <span class="withDraw__notice__desc">- 회원탈퇴 신청 시, 해당 아이디는 탈퇴처리되며 동일한 아이디로 재가입할 수 없습니다.</span>
+        <span class="withDraw__notice__desc">- 재가입 시 새로운 아이디로 가입이 가능합니다.</span> 
+    </li>
 
-                                <li>
-                                    <strong class="withDraw__notice__title">회원님이 기존에 작성하신 게시물은 회원탈퇴 시에도 삭제되지 않습니다.</strong>
-                                    <span class="withDraw__notice__desc">작성하신 게시물의 삭제를 원하실 경우에는 직접 삭제하신 후 탈퇴바라며, 삭제가 불가능한 경우 고객센터로 문의 바랍니다.</span>
-                                </li>
-                                
-                                <li>
-                                    <strong class="withDraw__notice__title">회원님의 주문 및 상담 내역, 1:1 문의 내역은 회원탈퇴 시 즉시 삭제되지 않으며 일정기간이 지난 후 파기됩니다.</strong>
-                                    <span class="withDraw__notice__desc">주문내역은 5년이 지난 경우에 자동 파기 처리됩니다.</span>
-                                    <span class="withDraw__notice__desc">주문 상담 내역, 1:1 문의 내역은 3년이 지난 경우 자동 파기 처리됩니다.</span>
-                                </li>
-                                
-                                <li>
-                                    <strong class="withDraw__notice__title">현재 진행중인 거래건이 있는 경우 탈퇴가 불가능합니다.</strong>
-                                    <span class="withDraw__notice__desc">모든 상품의 주문상태가 구매확정, 반품확정, 교환확정 취소완료인 경우에만 탈퇴가 가능합니다.</span>
-                                </li>
-                                
-                                
-                            </ul>
+    <li>
+        <strong class="withDraw__notice__title">2. 회원님이 기존에 작성하신 게시물은 회원탈퇴 시에도 삭제되지 않습니다.</strong>
+        <span class="withDraw__notice__desc">- 작성하신 게시물의 삭제를 원하실 경우에는 직접 삭제하신 후 탈퇴바라며, 삭제가 불가능한 경우 고객센터로 문의 바랍니다.</span>
+    </li>
 
-                            <div class="withDraw__write">
-                                <div>
-                                    <strong>
-										탈퇴사유<span class="hd__necessar">*</span>
-                                    </strong>
+    <li>
+        <strong class="withDraw__notice__title">3. 회원님의 주문 및 상담 내역, 1:1 문의 내역은 회원탈퇴 시 즉시 삭제되지 않으며 일정기간이 지난 후 파기됩니다.</strong>
+        <span class="withDraw__notice__desc">- 주문내역은 5년이 지난 경우에 자동 파기 처리됩니다.</span>
+        <span class="withDraw__notice__desc">- 주문 상담 내역, 1:1 문의 내역은 3년이 지난 경우 자동 파기 처리됩니다.</span>
+    </li>
 
-                                    <div class="hd__custom-select" id="dvMyDropoutTemplate">
-                                        <select name="leave_ask" id="leave_ask">
-                                            <option value="">탈퇴사유선택</option>
-											
-                                        <option value="15">맛/품질/서비스 불만</option><option value="20">배송 불만</option><option value="25">가격 불만</option><option value="30">이용빈도 낮음</option><option value="35">개인정보 유출</option><option value="40">회원 혜택/이벤트/프로모션 부족</option><option value="45">온라인몰 속도 불만</option><option value="50">탈퇴 후 재가입 위해</option><option value="210">기타 </option></select>
-                                    </div>
-                                </div>
+    <li>
+        <strong class="withDraw__notice__title">4. 현재 진행중인 거래건이 있는 경우 탈퇴가 불가능합니다.</strong>
+        <span class="withDraw__notice__desc">- 모든 상품의 주문상태가 구매확정, 반품확정, 교환확정 취소완료인 경우에만 탈퇴가 가능합니다.</span>
+    </li>
 
-                                <div>
-                                    <strong>
-                                      	  기타의견
-                                        <!-- <span class="hd__necessar">*</span> -->
-                                    </strong>
 
-                                    <div class="hd__custom-textarea">
-                                        <textarea id="freetalk" placeholder="" title="기타의견"></textarea>
-                                    </div>
-                                </div>
-                            </div>
+</ul>
 
-                            <div class="btn">
-                                <a href="#" class="btn-init white" id="dropoutCancelBtn">취소</a>
-                                <a href="#" class="btn-init green" onclick="dropoutConfirmBtn()">회원탈퇴</a>
-                            </div>
+<div class="withDraw__write">
+    <div>
+        <strong>
+          탈퇴사유<span class="hd__necessar">*</span>
+      </strong>
 
-    </body>
+      <div class="hd__custom-select clearfix" id="dvMyDropoutTemplate">
+        <select name="leave_ask" id="leave_ask">
+            <option value="">탈퇴사유선택</option>
+
+            <option value="15">맛/품질/서비스 불만</option><option value="20">배송 불만</option><option value="25">가격 불만</option><option value="30">이용빈도 낮음</option><option value="35">개인정보 유출</option><option value="40">온라인몰 속도 불만</option><option value="45">탈퇴 후 재가입 위해</option><option value="210">기타 </option></select>
+        </div>
+    </div>
+
+    <div>
+        <strong>
+         기타의견
+         <!-- <span class="hd__necessar">*</span> -->
+        </strong>
+
+     <div class="hd__custom-textarea clearfix">
+        <textarea id="freetalk" placeholder="" title="기타의견"></textarea>
+    </div>
+</div>
+</div>
+
+
+<div class="btn">
+    <a href="#" class="btn-init white" id="dropoutCancelBtn">취소</a>
+    <a href="#" class="btn-init orange" onclick="dropoutConfirmBtn()">회원탈퇴</a>
+</div>
+</div>
+
+</body>
 </html>
