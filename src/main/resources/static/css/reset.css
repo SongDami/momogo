@@ -154,6 +154,7 @@ table {
 /* 추가 */
 a {
     text-decoration: none;
+    color: #222;
 }
 
 .clearfix::after {
