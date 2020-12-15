@@ -7,6 +7,7 @@
     
     
     <link rel="stylesheet" type="text/css"  href="../css/main.css">
+    <link rel="stylesheet" type="text/css"  href="../css/idFind.css">
 
 
     
@@ -16,29 +17,28 @@
     <div class="container">
       <h2>아이디 찾기</h2>
 
-    <div class="clear">
-      <button type="click">아이디 찾기</button>
-      <button type="click">비밀번호 찾기</button>
+    <div class="findTab clearfix">
+      <a class="findId" href="#">아이디 찾기</a>
+      <a class="findPw" href="#">비밀번호 찾기</a>
     </div>
-    <form id="find_id" method="post" action="${pageContext.request.contextPath}/3depth/find_id_ok.do" onsubmit="return formCheck()">
+    <form id="findId" method="post" onsubmit="return formCheck()">
     <div class="input-group">
 
-     <input type="text" class="name-control" name = "name" id="inputName" placeholder="&nbsp;이름">
+     <input type="text" class="name" name = "name" id="inputName" placeholder="이름">
      <br/>
 
-     <input type="text" class="email-control" name = "email"  id="inputEmail" placeholder="&nbsp;이메일">
+     <input type="email" class="email" name = "email"  id="inputEmail" placeholder="이메일">
     </div>
 
-
-   <div class="find-id-button-group">
-    <div class="find-id-button">
       <button type="submit" class="find-id-btn" name="find_id_button">아이디 찾기</button>
-    </div>
-   </div>
-    </form>
-    <p>-회원 가입시 입력한 이름과 이메일 주소를 입력해 주세요.</p>
-    <p>-위 방법으로 찾지 못하는 경우 모모고 고객센터로 문의해 주세요.</p>
 
+
+    </form>
+    
+    <div class="desc">
+    <p>- 회원 가입시 입력한 이름과 이메일 주소를 입력해 주세요.</p>
+    <p>- 위 방법으로 찾지 못하는 경우 모모고 고객센터로 문의해 주세요.</p>
+    </div>
 
 
   </div>

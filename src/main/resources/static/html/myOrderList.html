@@ -1,87 +1,122 @@
-
 <html>
 <head>
-    <meta charset="UTF-8" />
-    <title>momogo myPage</title>
+  <meta charset="UTF-8" />
+  <title>momogo myPage</title>
 </head>
 
+<link rel="stylesheet" type="text/css"  href="../css/myOrderList.css">
+<link rel="stylesheet" type="text/css"  href="../css/reset.css">
 
-<section class="sub-cont__sec mySearch">
-    <h3 class="sub-cont__title">주문내역</h3>
 
+
+<div class="sub-cont orderView">
+  <section class="sub-cont__sec mySearch">
     <div class="mySearch__box">
-        <div class="inner">
-            <div class="row">
-                <div class="col check-month hd__custom-label">
-                    <span class="col__title">조회기간</span>
-                    <input type="radio" name="monthRadio" id="dvM_1" class="hidden" checked="" data-checked="y">
-                    <label class="month_radio on" for="dvM_1">1개월</label>
+      <div class="inner">
+        <div class="row">
+          <div class="col condi clearfix">
+            <h3 class="sub-cont__title">주문내역</h3>
+            <div class="hd__custom-select">
+              <select name="STATUS" id="STATUS" class="select-area">
+                <option value="">주문상태 전체</option>
+                <option value="IR">입금대기</option>
+                <option value="IC">입금확인</option>
+                <option value="PP">상품준비중</option>
+                <option value="DR">배송준비중</option>
+                <option value="DI">배송중</option>
+                <option value="DC">배송완료</option>
+                <option value="CANCEL">취소</option>
+                <option value="EXCHANGE">교환</option>
+                <option value="REFUND">반품</option> 
+              </select>
+            </div>
+          </div>
 
-                    <input type="radio" name="monthRadio" id="dvM_3" class="hidden" data-checked="n">
-                    <label class="month_radio" for="dvM_3">3개월</label>
+          
+        </div>
+      </div>
+    </div>
+  </section>
 
-                    <input type="radio" name="monthRadio" id="dvM_6" class="hidden" data-checked="n">
-                    <label class="month_radio" for="dvM_6">6개월</label>
-                    
-                    <input type="radio" name="monthRadio" id="dvM_9" class="hidden" data-checked="n">
-                    <label class="month_radio" for="dvM_9">9개월</label>
-                    
-                    <input type="radio" name="monthRadio" id="dvM_12" class="hidden" data-checked="n">
-                    <label class="month_radio" for="dvM_12">1년</label>
-                </div>
+
+  <div id="dvListArea"><section class="myList" id="dvOrderItemListArea">
+
+    <div>                           
+      <section class="order-list sub-cont__sec">
+        <div class="orderListView__info">
+          <div class="orderListView__top">
+          <a href="javascript:moveOrderDetail('169230','','B');">
+            <span class="orderListView__info__date">
+              <strong>주문일자 : 2020년12월15일(화)</strong>
+            </span>
+            <br>
+            <span class="orderListView__info__num">주문번호 : 201215000160723</span>
+          </a>
+          </div>
+          
+
+        <ul class="item-wrap" id="dvOrderItemDetlListArea169230">
+          <li class="item meals accordion">
+            <div class="head">
+              <span class="head__list">
+                <strong>
+                  <a href="#">
+                    라이트식단(체험팩) / 1주 / 3끼니 / 배송횟수 1회<br> 25,500원
+                  </a>
+                </strong>
+              </span>
+
+              <br>
+              <button type="button" class="view-detail accordion__head btn__accd">펼쳐보기 ▼</button>
+            </div>
+
+            <div class="accordion__cont" style="display: none;">
+              <div class="item-info">
                 
-                <div class="col check-cal">
-                    <span class="check-cal__data">
-                        <input type="text" id="START" class="datepick hasDatepicker" name="START" title="기간조회 시작날짜 입력" data-maxdate="0" data-mindate="-5Y"><img class="ui-datepicker-trigger" src="/front_pc/images/ico_datepicker.png" alt="날짜선택" title="날짜선택">
-                    </span>
-                    <span class="bar">~</span>
-                    <span class="check-cal__data">
-                        <input type="text" id="END" class="datepick hasDatepicker" name="END" title="기간조회 마지막날짜 입력" data-maxdate="0" data-mindate="-5Y"><img class="ui-datepicker-trigger" src="/front_pc/images/ico_datepicker.png" alt="날짜선택" title="날짜선택">
-                    </span>
-                </div>
-            </div>
-            
-            <div class="row">
-                <div class="col condi">
-                    <span class="col__title">주문상태</span>
-                    <div class="hd__custom-select">
-                       <select name="STATUS" id="STATUS" class="select-area">
-                          <option value="">주문상태 전체</option>
-                          <option value="IR">입금대기</option>
-                          <option value="IC">입금확인</option>
-                          <option value="PP">상품준비중</option>
-                          <option value="DR">배송준비중</option>
-                          <option value="DI">배송중</option>
-                          <option value="DC">배송완료</option>
-                          <option value="BF">구매확정</option>
-                          <option value="CANCEL">취소</option>
-                          <option value="EXCHANGE">교환</option>
-                          <option value="REFUND">반품</option> 
-                      </select>
-                  </div>
-              </div>
-              
-              <div class="col input-text">
-                <span class="col__title">상품명</span>
-                <input type="text" class="input__text" name="SEARCH_ITEM_NAME" id="SEARCH_ITEM_NAME">
-                <a href="#" class="btn-reset" id="btnSearchReset">초기화</a>
-            </div>
-        </div>
-    </div>
-    
-    <div class="btn">
-        <button type="button" class="btn-init green" id="btnSearch">조회</button>
-    </div>
-</div>
-</section>
 
-<div id="dvListArea"><!-- 주문한 내역이 없을 경우 -->
-    <div class="none-list">
-        <div class="none-list__inner">
-            <p class="none-list__txt">주문한 내역이 없습니다.</p>
-        </div>
-    </div>
-    <!-- //주문한 내역이 없을 경우 --></div>
+                <ul class="textbox">
+                  <li class="textbox__list">
+                    <span class="name"><a href="javascript:moveOrderDetail('169230','','');">템페 시트러스 샐러드 </a></span>
+                    <span class="num qty_num" data-qty="1">1개</span>
+                  </li>
+
+
+                  <li class="textbox__list">
+                    <span class="name"><a href="javascript:moveOrderDetail('169230','','');">그리스풍 올리브 닭살 샐러드 </a></span>
+                    <span class="num qty_num" data-qty="1">1개</span>
+                  </li>
+
+
+                  <li class="textbox__list">
+                    <span class="name"><a href="javascript:moveOrderDetail('169230','','');">상큼한 쉬림프 치아씨드 샐러드 </a></span>
+                    <span class="num qty_num" data-qty="1">1개</span>
+                  </li>
+
+
+                </ul>
+
+                <span class="process">입금대기
+                </span>
+
+
+
+              </div>
+            </div>
+          </li></ul>
+        </section>
+      </div>
+    </section>
+  </div>
+
+
+
+
+
+
+  <!-- paging -->
+  <div class="pagenation" id="pageNation" style=""><button class="pageBtn first" onclick="fnPgUtilRead('first')" style="display: none;"><span class="hidden">처음으로</span></button><button class="pageBtn prev" onclick="fnPgUtilRead('prev')" style="display: none;"><span class="hidden">이전</span></button><span class="pagenation__number" id="pager"><span class="active paging"><span>1</span></span></span><button class="pageBtn next" onclick="fnPgUtilRead('next')" style="display: none;"><span class="hidden">다음</span></button><button class="pageBtn end" onclick="fnPgUtilRead('last')" style="display: none;"><span class="hidden">마지막</span></button></div>
+  <!-- //paging -->
+</div>
 
 
 </body>
