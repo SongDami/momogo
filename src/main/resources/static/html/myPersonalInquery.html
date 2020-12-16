@@ -5,10 +5,12 @@
     <title>momogo myPage</title>
 </head>
 
+<link rel="stylesheet" type="text/css"  href="../css/myPersonalInquery.css">
+<link rel="stylesheet" type="text/css"  href="../css/reset.css">
 
-<div class="myPersonalInquery__sec">
+<form class="myPersonalInquery__sec">
     <h2>1:1 문의하기</h2>
-    <div class="inquery__sec">
+    <div class="inquery__sec clearfix">
         <h3 class="inquery__title">분류 <span class="import">*</span></h3>
 
         <div class="input-box">
@@ -39,28 +41,12 @@
 
             <div class="input-box">
                 <div class="email__box">
-                    <input type="text" name="Q_EMAIL1" id="Q_EMAIL1" class="input__text" title="이메일" placeholder="이메일"> @
-                    <input type="email" class="input__text input_mail" name="Q_EMAIL3" id="Q_EMAIL3" validation="required" title="이메일">
+                    <input type="text" name="Q_EMAIL1" id="Q_EMAIL1" class="input__text" title="이메일" placeholder="이메일"> 
 
-                    <div class="hd__custom-select">
-                        <select name="Q_EMAIL2" id="Q_EMAIL2">
-                            <option value="">직접입력</option>
-                            <option value="naver.com">naver.com</option>
-                            <option value="gmail.com">gmail.com</option>
-                            <option value="hotmail.com">hotmail.com</option>
-                            <option value="hanmail.net">hanmail.net</option>
-                            <option value="daum.net">daum.net</option>
-                            <option value="nate.com">nate.com</option>
-                        </select>
-                    </div>
 
                     <input type="hidden" name="Q_EMAIL" id="Q_EMAIL" value="sdm07743@naver.com">
                 </div>
 
-                <div class="hd-checkbox">
-                    <input type="checkbox" id="mailAlarm" class="hidden" checked="checked" data-checked="y">
-                    <label for="mailAlarm">답변 알람 수신</label>
-                </div>
             </div>
         </div>
 
@@ -74,7 +60,7 @@
             </div>
         </div>
 
-        <div class="inquery__sec">
+        <div class="inquery__sec clearfix">
             <h3 class="inquery__title">내용 <span class="import">*</span></h3>
 
             <div class="textarea_box">
@@ -83,7 +69,7 @@
         </div>
 
         <div class="inquery__sec">
-            <h3 class="inquery__title">첨부파일</h3>
+            <h3 id="in_title" class="inquery__title">첨부파일</h3>
 
             <div class="file_list">
                 <ul>
@@ -93,9 +79,9 @@
 
                             <img src="/front_pc/images/img_comm_preview.png" alt="">
 
-                            <button type="button" class="btn_icon del">
+                            <!-- <button type="button" class="btn_icon del">
                                 <span class="hidden">삭제</span>
-                            </button>
+                            </button> -->
                         </label>
                     </li>
                 </ul>
@@ -106,7 +92,12 @@
                 </div>
             </div>
         </div>
-    </div>
+
+        <div class="btn">
+            <button type="button" class="btn-init white" id="cancelBtn"><strong>취소</strong></button>
+            <button type="button" class="btn-init orange" id="addBtn"><strong>등록</strong></button>
+        </div>
+    </form> 
 
 
 </body>
