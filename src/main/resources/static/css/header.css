@@ -1,4 +1,5 @@
 .header {
+    position: relative;
 }
 
 .header nav {
@@ -39,9 +40,13 @@
 
 .all {
     position: absolute;
-    top: 80px;
+    width: 180px;
     left: 0;
     font-size: 20px;
+}
+
+.all > a {
+    line-height: 70px;
 }
 
 .nav {
@@ -55,6 +60,7 @@
 .nav_list {
     float: left;
     width: 180px;
+    position: relative;
 }
 
 .nav_list:hover .submenu {
@@ -71,11 +77,14 @@
 }
 
 .submenu {
+    width: 180px;
     border-top: 3px solid orange;
     font-size: 16px;
     font-weight: 500;
-    display: none;
     background-color: #fff;
+    position: absolute;
+    display: none;
+    z-index: 10;
 }
 
 .submenu_list {
@@ -91,13 +100,51 @@
 
 .all-category {
     background-color: #fff;
+    z-index: 10;
+    display: none;
 }
 
 .category_contents {
     width: 1100px;
     margin: auto;
+    position: relative;
 }
 
 .box {
-    display: inline-block;
+    position: absolute;
+    width: 180px;
+}
+
+.box1 {
+    left: 0px;
+}
+
+.box2 {
+    left: 195px;
+}
+
+.box3 {
+    left: 375px;
+}
+
+.box4 {
+    left: 555px;
+}
+
+.box_list {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.box1 > li {
+    text-align: left;
+}
+
+.box_list > a {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.all:hover .all-category {
+    display: block;
 }
