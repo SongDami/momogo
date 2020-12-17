@@ -102,33 +102,38 @@
     background-color: #fff;
     z-index: 10;
     display: none;
+    height: 190px;
 }
 
 .category_contents {
     width: 1100px;
     margin: auto;
     position: relative;
+    border-top: 3px solid orange;
 }
 
 .box {
     position: absolute;
     width: 180px;
+    font-size: 16px;
+    font-weight: 500;
 }
 
 .box1 {
     left: 0px;
+    padding-right: 10px;
 }
 
 .box2 {
-    left: 195px;
+    left: 190px;
 }
 
 .box3 {
-    left: 375px;
+    left: 370px;
 }
 
 .box4 {
-    left: 555px;
+    left: 550px;
 }
 
 .box_list {
@@ -141,8 +146,7 @@
 }
 
 .box_list > a {
-    font-size: 16px;
-    font-weight: 500;
+    
 }
 
 .all:hover .all-category {
