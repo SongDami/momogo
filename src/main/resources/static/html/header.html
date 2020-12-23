@@ -1,0 +1,158 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+</head>
+
+<body>
+
+    <header id="header" class="hd_header">
+
+        <div class="header">
+            <section class="user_area">
+                
+                <nav>
+                    <a href="javascript:fnLogin();">로그인</a>
+                    <a href="/member/join/memberjoin">회원가입</a>
+                    <a href="/myPage/myPageMain">마이페이지</a>
+                    <a href="/serviceCenter/serviceCenterMain">고객센터</a>
+                </nav>
+                
+            </section>
+    
+            <div class="header_area">
+                <h1 class="logo">
+                    <a href="/"><img src="../img/momogo.png" alt="greating"></a>
+                </h1>
+
+                <div class="all">
+                    <a href="#">
+                        <span class="all__icon">
+                            <span></span> 
+                            <span></span>
+                            <span></span>
+                        </span>
+                        전체보기
+                    </a>
+
+                    <div class="all-category">
+                        <div class="category_contents clearfix">
+                            <ul class="box box1">
+                                <li class="box_list"><a href="/story/brand/brandStoryDetail">그리팅 소개</a></li>
+                                <li class="box_list"><a href="/display/displayList">기획전</a></li>
+                                <li class="box_list"><a href="/newItem/newItemList">신상품</a></li>
+                                <li class="box_list"><a href="/event/eventList">이벤트</a></li>
+                                <li class="box_list"><a href="/best/bestList">베스트</a></li>
+                                <li class="box_list"><a href="/myPage/randomCouponRegist">쿠폰</a></li>
+                            </ul>
+                            
+                            <ul class="box box2">
+                                <li class="box_list"><a href="/story/brand/brandStoryDetail">그리팅 소개</a></li>
+                                <li class="box_list"><a href="/main/boardDetail?freeboardId=239">회사 소개</a></li>
+                                <li class="box_list"><a href="/story/greatingLife/greatingLifeList">푸드 라이브러리</a></li>
+                                <li class="box_list"><a href="/story/month/monthStoryList">그리팅TV</a></li>
+                                <!-- <li class="box_list"><a href="/story/greatingTable/greatingTableList">바른 레시피</a></li> -->
+                            </ul>
+                            
+                            <ul class="box box3">
+                                <li class="box_list"><a href="/planMeals/careLow">저당식단</a></li>
+                                <li class="box_list"><a href="/planMeals/careLight">라이트식단</a></li>
+                                <li class="box_list"><a href="/planMeals/careWellness">웰니스식단</a></li>
+                                <li class="box_list"><a href="/planMeals/careMyGreating">My그리팅</a></li>
+                            </ul>
+                            
+                            <ul class="box box4" id="dvMainMenuSubCtgryList"></ul>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nav">
+                    <ul class="nav_ul clearfix">
+                        <li class="nav_list">
+                            <a href="/story/storyMain" class="nav_list-name">모모고 소개</a>
+                            
+                            <ul class="submenu">
+                                <li class="submenu_list">
+                                    <a href="/story/brand/brandStoryDetail" class="submenu_list-name">그리팅 소개</a>
+                                </li>
+                                <li class="submenu_list">
+                                    <a href="/main/boardDetail?freeboardId=239" class="submenu_list-name">회사 소개</a>
+                                </li>
+                                
+                                <li class="submenu_list">
+                                    <a href="/story/greatingLife/greatingLifeList" class="submenu_list-name">푸드 라이브러리</a>
+                                </li>
+                                
+                                <li class="submenu_list">
+                                    <a href="/story/month/monthStoryList" class="submenu_list-name">그리팅TV</a>                            
+                                </li>
+                                
+                            </ul>
+                        </li>
+                        
+                        <li class="nav_list">
+                            <a href="/planMeals/planMeals" class="nav_list-name">식단종류</a>
+                            
+                            <ul class="submenu">
+                                <li class="submenu_list">
+                                    <a href="/planMeals/careLow" class="submenu_list-name">저당식단</a>
+                                </li>
+                                <li class="submenu_list">
+                                    <a href="/planMeals/careLight" class="submenu_list-name">라이트식단</a>
+                                </li>
+                                <li class="submenu_list">
+                                    <a href="/planMeals/careWellness" class="submenu_list-name">웰니스식단</a>
+                                </li>
+                                <li class="submenu_list">
+                                    <a href="/planMeals/careMyGreating" class="submenu_list-name">My그리팅</a>                            
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <li class="nav_list">
+                            <a href="/market/market" class="nav_list-name">이번주 식단</a>
+                            
+                            <ul class="submenu" id="dvMainMenuCtgryList">
+                            </ul>
+                        </li>
+                        
+                        <li class="nav_list">
+                            <a href="/healthCare/healthCareDetail?svContMstId=531&depth=240" class="nav_list-name">커뮤니티</a>
+                            <!-- 
+                            <ul class="submenu">
+                                <li class="submenu_list">
+                                    <a href="/healthCare/healthCareList?ID=240" class="submenu_list-name">건강</a>                            
+                                </li>
+                                
+                                <li class="submenu_list">
+                                    <a href="/healthCare/healthCareList?ID=242" class="submenu_list-name">계측</a>                            
+                                </li>
+                                
+                                <li class="submenu_list">
+                                    <a href="/healthCare/healthCareList?ID=241" class="submenu_list-name">검진</a>                            
+                                </li>
+                            </ul>
+                             -->
+                        </li>
+                    </ul>
+                </div>
+                
+                <nav class="direct">
+                    <a href="/order/orderCart" class="direct__cart">
+                        <span id="cartCnt"></span>
+                        <img src="/front_pc/images/icon_header_cart.png" alt="장바구니">
+                    </a>
+                </nav>
+    
+                
+            </div>
+        </div>
+    </header>
+
+<script>
+
+</script>
+</body>
+</html>

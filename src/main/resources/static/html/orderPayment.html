@@ -1,0 +1,421 @@
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>momogo myPage</title>
+</head>
+
+<link rel="stylesheet" type="text/css"  href="../css/orderPayment.css">
+<link rel="stylesheet" type="text/css"  href="../css/reset.css">
+
+
+<main id="contents" class="hd__orderPayment hd__main--pt0">
+	<ul class="breadcrumb">
+		<li>HOME</li>
+		<li>주문결제</li>
+	</ul>
+	<input name="UR_BAND_ID" value="1" type="hidden" id="UR_BAND_ID">
+
+	<div class="orderPayment hd__inner1100">
+		<h2 class="hd__page-title">주문결제</h2>
+
+		<div class="orderPayment__inner">
+			<div class="left-box">
+				<!-- 주문자 정보 -->
+				<section class="orderPayment__sect accordion ordererInfo" id="dvBuyerArea">
+					<h3 class="orderPayment__title accordion__head accordion__head--on">주문자 정보</h3>
+					<!--CS담당자계정 한정노출 해당부분 확인필요 -->
+					<a style="display : none;" href="#" class="btn-init green btn-chkMember btn__modal-open" data-login="n" data-popup-name="popup_checkMember">회원조회</a>
+					<!-- //CS담당자계정 한정노출 해당부분 확인필요 -->
+
+					<div class="orderPayment__cont ordererInfo__cont accordion__cont">
+						<div class="ordererInfo__list">
+							<label class="form_title" for="BUYER_NAME">이름<span class="hd__necessar">*</span></label>
+							<div class="input_type">
+								<input name="BUYER_NAME" type="text" class="input_text" id="BUYER_NAME" value="" title="이름" placeholder="주문자 이름" validation="required" checkinputusername="Y" maxlength="44">
+							</div>
+						</div>
+
+						<div class="ordererInfo__list">
+							<label class="form_title" for="BUYER_EMAIL">이메일<span class="hd__necessar">*</span></label>
+							<div class="input_type email">
+								<input name="BUYER_EMAIL_1" type="text" class="input_text email-id" id="BUYER_EMAIL_1" checkinputemail="Y" value="" title="주문하시는 분의 이메일" validation="required" placeholder="ex)momogo@gmail.com">
+
+
+
+							</div>
+						</div>
+
+						<div class="ordererInfo__list">
+							<label class="form_title" for="BUYER_PHONE_MOBILE_1">휴대폰번호<span class="hd__necessar">*</span></label>
+							<div class="input_type phone">
+								<div class="hd__custom-select" style="display: inline-block; width: 110px; vertical-align: top;">
+									<select class="inputMobile" name="BUYER_PHONE_MOBILE_1" id="BUYER_PHONE_MOBILE_1" validation="required" title="주문자 휴대폰번호">
+										<option>선택</option>
+										<option selected="">010</option>
+										<option>011</option>
+										<option>016</option>
+										<option>017</option>
+										<option>018</option>
+										<option>019</option>
+									</select>
+								</div>
+								<span><em class="blind">하이픈</em></span>
+								<input name="BUYER_PHONE_MOBILE_2" value="1234" type="text" class="input_text" id="BUYER_PHONE_MOBILE_2" placeholder="" title="주문자 휴대폰번호" maxlength="4" validation="required" numberonly="">
+								<span><em class="blind">하이픈</em></span>
+								<input name="BUYER_PHONE_MOBILE_3" value="5678" type="text" class="input_text" id="BUYER_PHONE_MOBILE_3" placeholder="" title="주문자 휴대폰번호" maxlength="4" validation="required" numberonly="">
+							</div>
+
+							<input name="BUYER_EMAIL" type="hidden" id="BUYER_EMAIL" value="sdm07743@naver.com">
+							<input name="BUYER_PHONE_MOBILE" value="010-5582-0743" type="hidden" id="BUYER_PHONE_MOBILE">
+							<input name="BUYER_BCODE" value="" type="hidden" id="BUYER_BCODE">
+							<input name="BUYER_ZIP_CD" value="" type="hidden" id="BUYER_ZIP_CD">
+							<input name="BUYER_ADDR1" value="" type="hidden" id="BUYER_ADDR1">
+							<input name="BUYER_ADDR2" value="" type="hidden" id="BUYER_ADDR2">
+							<input name="BUYER_UR_USER_ID" value="" type="hidden" id="BUYER_UR_USER_ID">
+
+							<input name="BUYER_USER_LOGIN_ID" value="" type="hidden" id="BUYER_USER_LOGIN_ID">
+							<input name="BUYER_UR_GROUP_ID" value="" type="hidden" id="BUYER_UR_GROUP_ID">
+							<input name="BF_PS_PAY_GRP_ID" value="3" type="hidden" id="BF_PS_PAY_GRP_ID">
+						</div>
+
+					</div>
+				</section>
+				<!-- //주문자 정보 -->
+
+				<!-- 배송지 정보 -->
+				<section class="orderPayment__sect accordion deliveryInfo">
+
+					<div id="sendDeliveryInfo">
+						<input type="hidden" name="RECEIVER_ADDR_ID" id="RECEIVER_ADDR_ID" value="116612">							
+						<input type="hidden" name="RECEIVER_NAME" id="RECEIVER_NAME" value="송다미">
+						<input type="hidden" name="RECEIVER_BCODE" id="RECEIVER_BCODE" value="4311325028">
+						<input type="hidden" name="RECEIVER_ZIP_CD" id="RECEIVER_ZIP_CD" value="28168">
+						<input type="hidden" name="RECEIVER_ADDR1" id="RECEIVER_ADDR1" value="충북 청주시 흥덕구 오송읍 오송길 3 (오송리)">
+						<input type="hidden" name="RECEIVER_ADDR2" id="RECEIVER_ADDR2" value="234">
+						<input type="hidden" name="RECEIVER_PHONE_MOBILE" id="RECEIVER_PHONE_MOBILE" value="010-5582-0743">
+						<input type="hidden" name="RECEIVER_PHONE_ADDED" id="RECEIVER_PHONE_ADDED" value="">
+						<input type="hidden" name="RECEIVER_PHONE_MOBILE_1" id="RECEIVER_PHONE_MOBILE_1" value="010">
+						<input type="hidden" name="RECEIVER_PHONE_MOBILE_2" id="RECEIVER_PHONE_MOBILE_2" value="5582">
+						<input type="hidden" name="RECEIVER_PHONE_MOBILE_3" id="RECEIVER_PHONE_MOBILE_3" value="0743">
+						<input type="hidden" name="fsCode" id="fsCode" value="">
+						<input type="hidden" name="fsName" id="fsName" value="">
+						<input type="hidden" id="deliveryTabNm" value="deliveryInfo-tab1">	
+					</div>
+
+
+
+					<!-- 일반배송인 경우 -->
+					<div class="accordion__cont deliveryInfo__cont">                            
+						<div>
+							<ul class="tab-menu clearfix">
+								<li class="tab-menu__list tab-menu__list--on tab-list-v2--on" data-tab="deliveryInfo-tab1" id="selectDelivery"><a href="#">배송지 선택</a></li>
+
+								<li class="tab-menu__list" data-tab="deliveryInfo-tab2" id="newDelivery"><a href="#">신규 배송지</a></li>
+
+							</ul>
+
+
+
+							<span class="address-list">
+								<a class="btn__modal-open" data-login="n" data-popup-name="popup_deliveryList">배송지 목록</a>
+							</span>
+
+
+
+							<!-- 배송지 선택 (등록된 배송지가 있는 경우) -->
+							<div class="ordinary tab-content tab-content--show current" id="deliveryInfo-tab1">
+								<ul class="box" id="dvOrdDeliList">
+									<li class="box__list hd-checkbox-type2">
+										<input type="hidden" name="MY_RECIP_ADDR_ID" id="MY_RECIP_ADDR_ID_116612" value="116612">							
+										<input type="hidden" name="MY_RECIP_BCODE" id="MY_RECIP_BCODE_116612" value="4311325028">
+										<input type="hidden" name="MY_RECIP_ZIP" id="MY_RECIP_ZIP_116612" value="28168">							
+										<input type="hidden" name="MY_RECIPIENT" id="MY_RECIPIENT_116612" value="송다미">
+										<input type="hidden" name="MY_RECIP_ADDR1" id="MY_RECIP_ADDR1_116612" value="충북 청주시 흥덕구 오송읍 오송길 3 (오송리)">
+										<input type="hidden" name="MY_RECIP_ADDR2" id="MY_RECIP_ADDR2_116612" value="234">
+										<input type="hidden" name="MY_RECIP_MOBILE" id="MY_RECIP_MOBILE_116612" value="010-5582-0743">
+										<input type="hidden" name="MY_RECIP_TEL" id="MY_RECIP_TEL_116612" value="">
+										<input type="hidden" name="MY_DELIVERY_YN" id="MY_DELIVERY_YN_116612" value="Y">
+										<input type="hidden" name="MY_VISIT_TYPE_CD" id="MY_VISIT_TYPE_CD_116612" value="">
+										<input type="hidden" name="checkAddrIdIdx" id="checkAddrIdIdx_116612" value="0" class="hidden">
+										<input type="radio" name="address" id="checkAddrId_116612" value="116612" class="hidden">
+										<label for="checkAddrId_116612" class="on">
+											<ul class="boxInner">
+												<li class="boxInner__list">
+													<strong id="recipentText">박모모</strong> <span>( 박모모)</span>
+													<i class="Badge">일반배송</i>
+												</li>     
+												<li class="boxInner__list">
+													<strong id="recipAddrText">서울특별시 왕십리로 123</strong>
+												</li>    
+												<li class="boxInner__list">
+													<span id="recipMobileText">010-1234-5678</span> / <span id="recipTelText"></span>
+												</li>      
+												<li class="boxInner__list">
+													<strong class="default" id="defaultYnText">기본배송지</strong>
+												</li>
+
+
+											</ul>
+										</label>
+									</li></ul>
+								</div>
+								<!-- //배송지 선택 (등록된 배송지가 있는 경우) -->
+
+								<!-- 신규 배송지 (등록된 배송지가 없는 경우) -->
+								<div class="newAddress tab-content" id="deliveryInfo-tab2">
+									<div class="hd-checkbox newAddress__sameAs">
+										<input type="checkbox" class="hidden" id="sameAs" name="sameAs" value="" data-checked="n">
+										<label for="sameAs">주문자 정보와 동일</label>
+									</div>
+
+									<div class="newAddress__list">
+										<label class="form_title" for="NEW_RECEIVER_NAME">받는 분<span class="hd__necessar">*</span></label>
+										<div class="input_type adress">
+											<input name="NEW_RECEIVER_NAME" type="text" class="input_text" id="NEW_RECEIVER_NAME" title="받으시는 분" validation="required">
+										</div>
+									</div>
+
+									<div class="newAddress__list">
+										<label class="form_title" for="NEW_RECEIVER_ZIP_CD">주소<span class="hd__necessar">*</span></label>
+										<div class="input_type adress" data-address-wrap="">
+											<input name="NEW_RECEIVER_BCODE" type="hidden" id="NEW_RECEIVER_BCODE" data-address-bcode="">
+											<input name="NEW_RECEIVER_ZIP_CD" type="text" class="input_text input--dim new--zipCode" id="NEW_RECEIVER_ZIP_CD" title="주소" validation="required" placeholder="" readonly="readonly" data-address-postcode="">
+											<button type="button" class="btn--findAdd" data-address-btn="" data-dawm-yn="y">주소찾기</button>
+											<input name="NEW_RECEIVER_ADDR1" type="text" class="input_text full input--dim" id="NEW_RECEIVER_ADDR1" title="받으시는 분의 주소" validation="required" placeholder="" readonly="readonly" data-address-text="">
+											<input name="NEW_RECEIVER_ADDR2" type="text" class="input_text full" id="NEW_RECEIVER_ADDR2" title="받으시는 분의 상세 주소" placeholder="" validation="required" data-address2="">
+										</div>
+									</div>
+
+									<div class="newAddress__list">
+										<label class="form_title" for="RECEIVER_PHONE_MOBILE_1">휴대폰번호<span class="hd__necessar">*</span></label>
+										<div class="input_type phone">
+											<div class="hd__custom-select" style="margin-left: 0;width:140px;display:inline-block;">
+												<select class="memberSelect inputMobile" name="NEW_RECEIVER_PHONE_MOBILE_1" id="NEW_RECEIVER_PHONE_MOBILE_1" validation="required" title="받으시는 분의 휴대폰번호">
+													<option value="">선택</option>
+													<option value="010">010</option>
+													<option value="011">011</option>
+													<option value="016">016</option>
+													<option value="017">017</option>
+													<option value="018">018</option>
+													<option value="019">019</option>
+												</select>
+											</div>
+											<!-- 	                                                <input name="NEW_RECEIVER_PHONE_MOBILE_1"  value="" type="text" class="input_text" id="NEW_RECEIVER_PHONE_MOBILE_1" placeholder="010" title="받으시는 분의 휴대폰번호" maxlength="3" validation="required" numberOnly> -->
+											<span><em class="blind">하이픈</em></span>
+											<input name="NEW_RECEIVER_PHONE_MOBILE_2" value="" type="text" class="input_text" id="NEW_RECEIVER_PHONE_MOBILE_2" title="받으시는 분의 휴대폰번호" maxlength="4" validation="required" numberonly="">
+											<span><em class="blind">하이픈</em></span>
+											<input name="NEW_RECEIVER_PHONE_MOBILE_3" value="" type="text" class="input_text" id="NEW_RECEIVER_PHONE_MOBILE_3" title="받으시는 분의 휴대폰번호" maxlength="4" validation="required" numberonly="">
+										</div>
+									</div>
+
+									
+
+									<div class="hd-checkbox addAddrArea">
+										<input type="checkbox" id="ADD_ADDR_YN" name="ADD_ADDR_YN" class="hidden" value="Y" checked="checked">
+
+										<label for="ADD_ADDR_YN">배송지 목록에 추가</label>
+									</div>
+
+									<div class="hd-checkbox addAddrArea">
+										<input type="checkbox" id="CHOICE_ADDR_YN" name="CHOICE_ADDR_YN" value="Y" class="hidden">
+										<label for="CHOICE_ADDR_YN">기본배송지로 선택</label>
+									</div>
+								</div>
+							</div>
+
+                                <!-- //신규 배송지 (등록된 배송지가 없는 경우)
+								<script type="text/javascript">
+									function onInputDemand(e) {
+								    	e.value =  e.value.replace(/([#0-9]\u20E3)|[\xA9\xAE\u203C\u2047-\u2049\u2122\u2139\u3030\u303D\u3297\u3299][\uFE00-\uFEFF]?|[\u2190-\u21FF][\uFE00-\uFEFF]?|[\u2300-\u23FF][\uFE00-\uFEFF]?|[\u2460-\u24FF][\uFE00-\uFEFF]?|[\u25A0-\u25FF][\uFE00-\uFEFF]?|[\u2600-\u27BF][\uFE00-\uFEFF]?|[\u2900-\u297F][\uFE00-\uFEFF]?|[\u2B00-\u2BF0][\uFE00-\uFEFF]?|(?:\uD83C[\uDC00-\uDFFF]|\uD83D[\uDC00-\uDEFF])[\uFE00-\uFEFF]?/g, '');
+									}
+								</script> -->
+								
+
+								<!-- //새벽배송 가능 지역 아닌 경우 -->
+
+								<!-- 배송 요청사항 -->
+								<div class="demand">
+									<label class="demand__title" for="demandYn">배송 요청사항</label>
+									<div class="demand__cont">
+										<div class="hd__custom-select">
+											<select name="" id="demandYn">
+												<option value="">배송요청사항 선택</option>
+												<option value="1">직접입력</option>
+												<option value="2">배송 전에 미리 연락 바랍니다</option>
+												<option value="3">부재시 경비실에 맡겨주세요</option>
+												<option value="4">부재시 전화주시거나 문자 남겨주세요</option>
+											</select>
+										</div>
+
+										<!-- 배송요청사항 직접입력할 경우 -->
+										<div class="hd__custom-textarea" style="display: none;">
+											<textarea name="MSG" id="MSG" title="배송시 요청사항 입력" maxlength="60"></textarea>
+											<span class="text_count"><span class="dvByteCheck">0</span>/30 자</span>
+										</div>
+										<!-- //배송요청사항 직접입력할 경우 -->
+									</div>
+
+									<div class="hd-checkbox safeNumber">
+										<input type="checkbox" class="hidden" id="safeNumber" data-checked="y">
+										<label for="safeNumber">안심번호 사용</label>
+										<div class="Qmark btn__modal-open" data-login="n" data-popup-name="popup_safetyNumber"></div>
+									</div>
+									
+
+									
+									                              
+								</div>
+								<!-- //배송 요청사항 -->
+
+								<!-- 따로 배송 선택 영역 -->
+								<div class="seperate">
+									
+								</div>
+								<!-- //따로 배송 선택 영역 -->
+							</div>
+							<!-- // 일반배송인 경우 -->
+
+							
+						</section>
+						<!-- //배송지 정보 -->
+
+						<!-- 주문상품 확인 -->
+
+
+								
+
+                        <!-- 결제수단 선택 -->
+                        <section class="orderPayment__sect accordion payMethod">
+                        	<h3 class="orderPayment__title accordion__head accordion__head--on">결제수단 선택</h3>
+
+                        	<div class="accordion__cont payMethod__cont">
+                        		<ul class="box" id="dvPaymentTypeArea">
+                        			
+                        			<li class="box__list hd__custom-label on">
+                        				<span class="paycheck virtual on" data-tab="paytab3">
+                        					<input type="radio" name="PS_PAY_CONFIG_ID" value="84" id="pay-type3" class="hidden">
+                        					<label for="pay-type3" class="on">무통장 입금</label>
+                        				</span>
+                        			</li>
+                        			
+
+
+
+                        		
+                        	</div>
+                        </section>
+                        <!-- //결제수단 선택 -->
+                       
+
+                        <!-- 약관동의 -->
+                        <section class="orderPayment__sect agreeArea accordion" id="dvMemberStipulationArea" style="">
+                        	<h3 class="orderPayment__title accordion__head">이용약관 동의</h3>
+
+                            <!-- <div class="hd-checkbox">
+                            	<input type="checkbox" name="all" id="checkall" class="hidden" data-item-all>
+                            	<label for="checkall">이용약관 동의</label>
+                            </div> -->
+
+                            <div class="accordion__cont agreeArea__cont" style="display: none;">                                
+                            	<div class="hd-checkbox" id="dvOrderStipulationArea">
+                            		<div class="check-list">
+                            			<input type="checkbox" name="all" id="agree1" validation="required" title="이용약관 동의" class="hidden" data-item-list="" data-checked="n">
+                            			<label for="agree1">개인정보 수집 및 이용동의 (필수)</label>
+                            			<a href="#" class="btn-view agreeBtn" data-login="n" data-popup-name="popup_agreeDetail" data-agreeidx="2">내용보기</a>
+                            		</div>
+									<!-- 
+									<div class="check-list">
+										<input type="checkbox" name="all" id="agree2" validation="required" title="개인정보취급위탁동의" class="hidden" data-item-list>
+										<label for="agree2">개인정보 취급 위탁 동의 (필수)</label>
+										<a href="#" class="btn-view agreeBtn" data-login="n" data-popup-name="popup_agreeDetail" data-agreeidx="3">내용보기</a>
+									</div>
+								-->
+								<div class="check-list">
+									<input type="checkbox" name="all" id="agree4" validation="required" title="개인정보 제3자 정보제공 동의" class="hidden" data-item-list="" data-checked="n">
+									<label for="agree4">개인정보 제3자 제공 동의 (필수)</label>
+									<a href="#" class="btn-view agreeBtn" data-login="n" data-popup-name="popup_agreeDetail" data-agreeidx="4">내용보기</a>
+								</div>
+							</div>
+						</div>
+
+						<p class="desc">개인정보 수집 및 이용에 대한 위 내용을 모두 확인하였으며 결제에 동의합니다.</p>
+					</section>
+					<!-- //약관동의 -->
+				</div>
+
+				<div class="right-box">
+					<div>
+						<section class="orderPayment__sect priceArea">
+							<h3 class="orderPayment__title">결제금액</h3>
+
+							<ul class="box">
+								<li class="box__list">
+									<strong class="txt-lft">총 상품금액</strong>
+									<strong class="txt-rgt"><span id="dvPaymentTotalMarketPrice">102,000</span>원</strong>
+								</li>
+
+								<li class="box__list">
+									<strong class="txt-lft">총 할인금액</strong>
+									<strong class="txt-rgt"><span id="dvPaymentTotalSalePrice">0</span>원</strong>
+
+									<ul class="boxInner" id="dvSaleListArea" style="display: none;"></ul>
+									<script type="text/x-handlebars-template" id="dvSaleListCellTemplate">
+										<li class="boxInner__list">
+											<span class="txt-lft">{{HELPER_DISCOUNT_TYPE_TEXT DC_TYPE}}</span>																		
+											<span class="txt-rgt">{{#if DC_PRICE}}-{{/if}}{{HELPER_PRICE_FORMAT DC_PRICE}}원</span>
+										</li>
+									</script>
+								</li>
+
+								<li class="box__list" id="hpointUseArea" style="display : none;">
+									<strong class="txt-lft">H.Point 사용</strong>
+									<strong class="txt-rgt"><span id="dvUseHpointPrice">-0</span>P</strong>
+								</li>
+
+								<li class="box__list" id="MobileGiftUseArea" style="display : none;">
+									<strong class="txt-lft">모바일이용권 사용</strong>
+									<strong class="txt-rgt"><span id="dvUseMobileGiftPrice">-0</span>원</strong>
+								</li>
+
+								<li class="box__list">
+									<strong class="txt-lft">총 배송비</strong>
+									<strong class="txt-rgt"><span id="dvPaymentTotalSumShippingPrice">0</span>원</strong>
+									<ul class="boxInner dvShippingPrice">
+										<li class="boxInner__list">
+											<span class="txt-lft">상품별 총 배송비</span>																		
+											<span class="txt-rgt" id="dvPaymentTotalShippingPrice">0원</span>
+										</li>
+
+										<li class="boxInner__list totalShippingPriceClass" style="display: none">
+											<span class="txt-lft">지역 추가 배송비</span>																		
+											<span class="txt-rgt" id="dvPaymentTotalAddShippingPrice">0원</span>
+										</li>
+										<li class="boxInner__list deliveryCouponPriceClass" style="display: none">
+											<span class="txt-lft">배송비 쿠폰할인</span>																		
+											<span class="txt-rgt" id="dvPaymentDeliveryCoupon">0원</span>
+										</li>													
+									</ul>
+								</li>
+
+								<li class="box__list total">
+									<strong class="txt-lft">총 결제 예정금액</strong>
+
+									<span class="txt-rgt">
+										<strong class="price"><span id="dvPaymentTotalPaymentPrice">102,000</span>원</strong>
+										<span class="desc" id="savePointSpan" style="display : none;">H.Point <span id="savePointNum">102</span> 적립 예정</span>
+									</span>
+								</li>
+							</ul>
+						</section>
+
+						<button class="btn-init green btn-pay" id="dvOrder" data-login="n" data-popup-name="popup_greatingPayPwConfirm">결제하기</button>
+						<button class="btn-init white btn-cancel" id="dvCancelOrder">취소</button>
+
+						<input type="hidden" name="jointYN" id="jointYN" value="N">
+						<input type="hidden" name="jointDate" id="jointDate" value="">
+						<input type="hidden" name="jointDetlId" id="jointDetlId" value="">                            
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>

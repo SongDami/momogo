@@ -1,0 +1,89 @@
+@charset "utf-8";
+
+
+
+.container {
+	width: 750px;
+	margin: auto;
+	color: #222;
+}
+
+.title{
+	padding: 10px 0 10px 0;
+}
+
+.title_name {
+	font-weight: bold;
+	font-size: 20px;
+}
+#join_form {
+	margin: auto;
+}
+
+.userid{
+	padding-top: 25px; 
+}
+
+#join_form p{
+	font-size: 16px;
+	font-weight: bold;
+	display: inline-block;
+	padding-bottom: 20px; 
+	width: 120px;
+	height: 45px;
+}
+.join_form input{
+	padding-left: 10px;
+	height: 45px;
+	width: 465px;
+	font-size: 16px;
+	border: 1px solid #BDBDBD; 
+}
+.useremail input{
+	width: 140px;
+	height: 45px;
+	border: 1px solid #BDBDBD; 
+}
+
+.useremail select{
+	width: 140px;
+	height: 47px;
+	border: 1px solid #BDBDBD; 
+
+}
+
+.check {
+	width: 130px;
+	height: 45px;
+	background:orange;
+	color: #fff;
+	border: 1px solid orange;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.join_button button{
+
+	width: 371px;
+	height: 70px;
+	font-size: 20px;
+	font-weight: bold;
+	margin: 30px 0 0 0;
+	padding: 0;
+}
+
+.cancel_btn {
+	border: 1px solid #BDBDBD;
+	background: #fff;
+	color: #222;
+	box-sizing: border-box;
+
+}
+
+.join_btn {
+	background: orange;
+	border: 1px solid orange;
+	color: #fff;
+
+
+}

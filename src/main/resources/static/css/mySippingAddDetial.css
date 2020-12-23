@@ -1,0 +1,110 @@
+@charset "utf-8";
+
+.sub-cont__title{
+	font-size: 20px;
+	padding: 30px 0;
+}
+
+.myOrder-wrap, .sub-cont__title{
+	width: 850px;
+	margin: auto;
+}
+
+.form_title{
+	font-size: 16px;
+	font-weight: bold;
+	float: left;
+	width: 135px;
+	height: 47px;
+	line-height: 47px;
+
+}
+
+.hd-checkbox{
+	width: 200px;
+	margin-left: 10px;
+	line-height: 40px;
+	float: left;
+}
+
+.btn--findAdd{
+	background-color: #fff;
+	font-weight: bold;
+}
+
+#CHOICE_ADDR_YN{
+	width: 24px;
+	height: 24px;
+	border: 1px solid #BDBDBD;
+	margin-top:10px; 
+}
+
+
+.deliveryInfo input, .deliveryInfo select, .deliveryInfo button{
+	border: 1px solid #BDBDBD;
+	box-sizing: border-box;
+	vertical-align:middle;
+	padding: 0 10px;
+	font-size: 16px;
+	height: 45px;
+	margin-bottom: 10px;
+
+}
+
+#addressTitle{
+	padding-bottom: 90px;
+}
+
+.w390 {
+	width: 390px;
+	float: left;
+}
+
+.w155{
+	width: 155px;
+	border: 1px solid #BDBDBD;
+	float: left;
+	margin: 0 20px 0 0;
+
+}
+
+.full {
+	width: 700px;
+	border: 1px solid #BDBDBD;
+}
+
+#Q_MOBILE1{
+	float: left;
+	width: 110px;
+	margin-right: 10px; 
+
+}
+
+.input_text{
+	width: 110px;
+	margin: 0 6.5px 0 6.5px;
+}
+
+.myShipping__btn{
+	margin-top: 50px;
+	margin-left: 213.5px;
+}
+
+.btn-init{
+	width: 200px;
+	height: 54px;
+	font-size: 18px;
+
+}
+
+.white{
+	border: 1px solid #BDBDBD;
+	background-color: #fff;
+
+
+}
+.orange{
+	border: 1px solid orange;
+	background-color: orange;
+	color: #fff;
+}

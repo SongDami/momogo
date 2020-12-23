@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <title>momogo</title>
+  <!-- 크로스 브라우징 호환성 부분 시작 -->
+
+  <link rel="stylesheet" type="text/css" href="../css/reset.css" />
+  <link rel="stylesheet" type="text/css" href="../css/join.css" />
+
+</head>
+
+<body>
+
+ <div class="container">
+
+  <div class="join_body">
+    <hr />
+    <div class="title">
+      <span class="title_name">
+      회원 정보 입력(필수)&nbsp;</span>
+    </div>
+    <hr />
+    <form id="join_form" class = "join_form" method="post" >
+     <input type="hidden" id="checked_user_id" value="">
+     <input type="hidden" id="checked_email" value="">
+     <input type="hidden" id="checked_nick" value="">
+     <div class="userid">
+      <p>아이디:</p>
+      <input type="text" id="user_id" name="user_id" placeholder="*5~20자의 영문 소문자, 숫자만 사용 가능합니다.">
+      <button class ="check" id="idcheck" type="button">중복확인</button>
+
+    </div>
+
+    <div class="userpw">
+      <p>비밀번호:</p>
+      <input type="password"  id="user_pw" name="user_pw" placeholder="*비밀번호를 입력하세요.">
+    </div>
+    <div class="userpwre">
+      <p>&nbsp;</p>
+      <input class="pd" type="password"  id="userpw_re" name="userpw_re" placeholder="*비밀번호를 다시 입력하세요.">
+      <p>&nbsp;</p>
+    </div>
+
+    <div class="useremail">
+      <p>이메일:</p>
+      <input type="email"  id="email" name="email" > @ <input type="email"  id="email" name="email" >
+      <select class="useremail" name="email2">
+        <option value="choose">직접입력</option>
+        <option value="naver">naver.com</option>
+        <option value="gmail">gmail.com</option>
+        <option value="hotmail">hotmail.com</option>
+        <option value="hanmail">hanmail.net</option>
+        <option value="daum">daum.net</option>
+        <option value="nate">nate.com</option>
+      </select>
+
+      <button class ="check" id="emailcheck" type="button">중복확인</button>
+
+
+    </div>
+
+    <div class="username" >
+      <p>이름:</p>
+      <input type="text"  id="name" name="name" >
+      <p>&nbsp;</p>
+    </div>
+
+    <div class="usernick">
+      <p>닉네임:</p>
+      <input type="text"  id="nick" name="nick"  placeholder="*8자 이내의 영문, 한글, 숫자만 사용 가능합니다.">
+      <button class ="check" id="nickcheck" type="button">중복확인</button>
+
+    </div>
+
+    <div class="userphone">
+      <p>휴대폰번호:</p>
+      <input type="text"  id="tel" name="tel" placeholder="ex)01012345678">
+    </div>
+
+
+    <div class="join_button">
+     <button class="cancel_btn" type="button">취소</button>
+     <button class="join_btn" type="submit" id="btn_save">회원가입하기</button>
+   </div>
+
+ </form>
+</div>
+
+</div>
+
+<link rel="stylesheet" href="sweetalert2.min.css">
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<!-- validate 플러그인 참조 -->
+<script src="plugins/validate/jquery.validate.min.js"></script>
+<script src="plugins/validate/additional-methods.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+<script type="text/javascript">
+  $(function(){
+    $("#idcheck").click(function(){
+      swal.fire({
+
+        text:'사용가능한 아이디입니다.',
+        confirmButtonText:'확인',
+        confirmButtonColor:'orange'
+      });
+
+    });
+    $("#emailcheck").click(function(){
+      swal.fire("사용가능한 이메일입니다.");
+
+    });
+    $("#nickcheck").click(function(){
+      swal.fire("사용가능한 닉네임입니다.");
+
+    });
+
+
+
+
+  });
+
+  $(function() {
+
+    /* 유효성 검사 추가 함수 */
+    $.validator.addMethod("kor", function(value, element) {
+      return this.optional(element) || /^[ㄱ-ㅎ가-힣0-9]*$/i.test(value);
+    });
+
+    $.validator.addMethod("tel", function(value, element) {
+      return this.optional(element) || /^01(?:0|1|[6-9])(?:\d{3}|\d{4})\d{4}$/i.test(value) ||
+      /^\d{2,3}\d{3,4}\d{4}$/i.test(value);
+    });
+    /* form 태그에 부여한 id속성에 대한 유효성 검사 함수 호출 */
+    $("#join_form").validate({
+      /* 입력검사 규칙 */
+      rules: {
+                // [아이디] 필수 + 알파벳, 숫자 조합만 허용
+                userid: { required: true, alphanumeric: true },
+
+                // [비밀번호] 필수 + 글자수 길이 제한
+                userpw: { required: true, minlength: 4, maxlength: 20 },
+
+                // [비밀번호 확인] 필수 + 특정 항목과 일치 (id로 연결)
+                userpw_re: { required: true, equalTo: "#user_pw" },
+
+                // [이름] : 필수
+                username: { required: true, kor: true },
+
+                // [이메일] 필수 + 이메일 형식 일치 필요
+                email: { required: true, email: true },
+
+                // [닉네임] 필수
+                usernick: { required: true },
+
+                // [연락처] 필수
+                userphone: { required: true, phone: true },
+
+              },
+              /* 규칙이 맞지 않을 경우의 메시지 */
+              messages: {
+                userid: {
+                  required: "아이디를 입력하세요.",
+                  alphanumeric: "아이디는 영어, 숫자만 입력 가능합니다."
+                },
+
+                userpw: {
+                  required: "비밀번호를 입력하세요.",
+                  minlength: "비밀번호는 4글자 이상 입력하셔야 합니다.",
+                  maxlength: "비밀번호는 최대 20자까지 가능합니다."
+                },
+
+                userpw_re: {
+                  required: "비밀번호 확인값을 입력하세요.",
+                  equalTo: "비밀번호 확인이 잘못되었습니다."
+                },
+
+                username: {
+                  required: "이름을 입력하세요.",
+                  kor: "이름은 한글만 입력 가능합니다."
+
+                },
+
+                usernick: {
+                  required: "닉네임을 입력하세요.",
+
+                },
+
+                email: {
+                  required: "이메일을 입력하세요.",
+                  email: "이메일 형식이 잘못되었습니다."
+                },
+
+                userphone: {
+                  required: "연락처를 입력하세요.",
+                  tel: "연락처 형식이 잘못되었습니다."
+
+                }
+              }
+        }); // end validate()
+  });
+</script>
+</body>
+
+</html>
