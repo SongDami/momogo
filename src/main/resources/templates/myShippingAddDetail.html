@@ -1,0 +1,107 @@
+
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>momogo myPage</title>
+</head>
+<link rel="stylesheet" type="text/css"  href="../css/reset.css">
+<link rel="stylesheet" type="text/css"  href="../css/mySippingAddDetial.css">
+
+<section class="sub-cont__sec overView">
+	<input type="hidden" id="TYPE" value="add">
+
+
+
+	<h3 class="sub-cont__title">배송지 추가</h3>
+
+
+
+
+	<div class="myOrder-wrap deliveryInfo">
+
+		<form id="iForm" name="iForm" enctype="multipart/form-data" method="post" onsubmit="return false;">
+			<div class="orderDeliveryWrite__form">
+				<div class="newAddress__list clearfix">
+					<input type="hidden" name="deliveryId" id="deliveryId" value="">
+					<input type="hidden" name="earlyShippingId" id="earlyShippingId" value="">
+					<input type="hidden" name="EMPTY_YN" id="EMPTY_YN" value="Y">
+					<label class="form_title" for="NEW_RECEIVER_NAME">받는 분<span class="hd__necessar">*</span></label>
+
+					<div class="input_type">
+						<input name="NEW_RECEIVER_NAME" type="text" value="" class="input__text w390" id="NEW_RECEIVER_NAME" title="받는 분" validation="required">
+
+						<div class="hd-checkbox">
+							<input type="hidden" name="DEFAULT_YN" id="DEFAULT_YN" value="">
+
+							<input type="checkbox" id="CHOICE_ADDR_YN" class="hidden" data-checked="n">
+							<label for="CHOICE_ADDR_YN">기본배송지로 선택</label>
+						</div>
+					</div>
+				</div>
+
+				<div class="newAddress__list clearfix">
+					<label id="addressTitle" class="form_title address" for="NEW_RECEIVER_ZIP_CD">주소<span class="hd__necessar">*</span></label>
+
+					<div class="input_type address" data-address-wrap="">
+						<input name="NEW_RECEIVER_BCODE" type="hidden" value="" class="input__text w155" id="NEW_RECEIVER_BCODE" readonly="readonly" data-address-bcode="">
+
+						<input name="NEW_RECEIVER_ZIP_CD" type="text" value="" class="input__text w155" id="NEW_RECEIVER_ZIP_CD" title="주소" validation="required" readonly="readonly" data-address-postcode="">
+
+						<button type="button" class="btn--findAdd clearfix" data-address-btn="" data-dawm-yn="y">주소찾기</button>
+						
+
+						<input name="NEW_RECEIVER_ADDR1" type="text" value="" class="input__text full" id="NEW_RECEIVER_ADDR1" title="주소" validation="required" readonly="readonly" data-address-text="">
+
+
+						<input name="NEW_RECEIVER_ADDR2" type="text" value="" class="input__text full" id="NEW_RECEIVER_ADDR2" title="상세 주소" validation="required" data-address-text2="">
+
+					</div>
+				</div>
+
+				<div class="newAddress__list clearfix">
+					<label class="form_title" for="NEW_RECEIVER_PHONE_MOBILE_1">휴대폰번호<span class="hd__necessar">*</span></label>
+
+					<div class="input_type phone clearfix">
+						<div class="cellphone__number">
+							<div class="hd__custom-select w110">
+								<select id="Q_MOBILE1" title="수령자 휴대폰번호1">
+									<option value="">선택</option>
+									<option value="010">010</option>
+									<option value="011">011</option>
+									<option value="016">016</option>
+									<option value="017">017</option>
+									<option value="018">018</option>
+									<option value="019">019</option>
+								</select>
+							</div>  -
+
+							<input type="hidden" id="mobile1" class="input_text" value="" maxlength="3" numberonly=""> 
+							<input type="tel" id="Q_MOBILE2" class="input_text" value="" maxlength="4" numberonly=""> -
+							<input type="tel" id="Q_MOBILE3" class="input_text" value="" maxlength="4" numberonly="">
+							<input type="hidden" id="Q_MOBILE">
+						</div>
+					</div>
+				</div>
+
+
+				<div class="newAddress__list clearfix">
+					<label class="form_title" for="NEW_RECEIVER_NAME">배송지 별칭<span class="hd__necessar">*</span></label>
+
+					<div class="input_type">
+						<input type="text" class="w390" id="dname" value="" placeholder="배송지명을 입력해주세요." title="배송지 별칭" validation="required">
+					</div>
+				</div>
+
+
+
+
+
+				<div class="myShipping__btn btn">
+					<button type="reset" class="btn-init white" id="btnModCancel"><strong>취소</strong></button>
+					<button type="submit" class="btn-init orange" id="btnModConfirm"><strong>저장</strong></button>
+				</div>
+			</div>
+		</form></div>
+	</section>
+
+	</html>

@@ -1,0 +1,913 @@
+
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>momogo myPage</title>
+</head>
+<link rel="stylesheet" type="text/css" href="../css/Community.css">
+<link rel="stylesheet" type="text/css" href="../css/reset.css">
+<div id="main-area" class="skin-1080 fl">
+    <div id="sub-tit">
+        <div class="title_area">
+            <div class="info_tit">
+                <h3 class="sub-tit-color">모모고 커뮤니티</h3>
+            </div>
+        </div>
+        <div class="me_feed"></div>
+    </div>
+    <div class="list-style">
+        <div class="sort_area">
+            <div id="listSizeSelectDiv" class="select_component2" style="width: 80px">
+                <a href="#" onclick="nhn.search.toggleBoxLayer('listSizeSelectDiv');return false;" class="select_box">15개씩</a>
+                <ul class="select_list">
+                    <li>
+                        <a href="/ArticleList.nhn?search.clubid=15092639&amp;search.boardtype=L&amp;search.menuid=533&amp;search.marketBoardTab=D&amp;search.specialmenutype=&amp;userDisplay=5">5개씩</a>
+                    </li>
+                    <li>
+                        <a href="/ArticleList.nhn?search.clubid=15092639&amp;search.boardtype=L&amp;search.menuid=533&amp;search.marketBoardTab=D&amp;search.specialmenutype=&amp;userDisplay=10">10개씩</a>
+                    </li>
+                    <li>
+                        <a href="/ArticleList.nhn?search.clubid=15092639&amp;search.boardtype=L&amp;search.menuid=533&amp;search.marketBoardTab=D&amp;search.specialmenutype=&amp;userDisplay=15">15개씩</a>
+                    </li>
+                    <li>
+                        <a href="/ArticleList.nhn?search.clubid=15092639&amp;search.boardtype=L&amp;search.menuid=533&amp;search.marketBoardTab=D&amp;search.specialmenutype=&amp;userDisplay=20">20개씩</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="article-board m-tcol-c" id="upperArticleList">
+        <table>
+            <caption>
+                <span class="blind">게시물 목록</span>
+            </caption>
+            <colgroup>
+                <col style="width: 88px">
+                <col>
+                <col style="width: 118px">
+                <col style="width: 80px">
+                <col style="width: 68px">
+                <col style="width: 68px">
+            </colgroup>
+            <thead>
+                <tr id="normalTableTitle">
+                    <th>
+                        <div id="articleHeadListDiv" class="select_component3 ">
+                            <a href="#" onclick="nhn.search.toggleBoxLayer('articleHeadListDiv', true);return false;" class="select_box">말머리</a>
+                            <ul class="select_list">
+                                <li>
+                                    <a href="/ArticleList.nhn?search.clubid=15092639&amp;search.menuid=533&amp;search.boardtype=L&amp;userDisplay=15">
+                                        <span>전체보기</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/ArticleList.nhn?search.clubid=15092639&amp;search.menuid=533&amp;search.boardtype=L&amp;userDisplay=15&amp;search.headid=597">인테리어</a>
+                                </li>
+                                <li>
+                                    <a href="/ArticleList.nhn?search.clubid=15092639&amp;search.menuid=533&amp;search.boardtype=L&amp;userDisplay=15&amp;search.headid=598">익스테리어</a>
+                                </li>
+                                <li>
+                                    <a href="/ArticleList.nhn?search.clubid=15092639&amp;search.menuid=533&amp;search.boardtype=L&amp;userDisplay=15&amp;search.headid=619">크리에이터</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </th>
+                    <th scope="col"><span class="article_title">제목</span></th>
+                    <th scope="col" class="th_name">작성자</th>
+                    <th scope="col">작성일</th>
+                    <th scope="col">조회</th>
+                    <th scope="col"><a href="/ArticleList.nhn?search.clubid=15092639&amp;search.menuid=533&amp;search.boardtype=L&amp;search.useuparticle=true&amp;userDisplay=15" class="sort_likes">좋아요</a></th>
+                </tr>
+                <tr id="simpleTableTitle" style="display: none;">
+                    <th colspan="6" style="height: 0px; padding: 0px;"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="_noticeArticle board-notice type_required">
+                    <td colspan="2" class="td_article">
+                        <div class="board-tag">
+                            <strong class="board-tag-txt"> <span class="inner">필독</span>
+                            </strong>
+                        </div>
+                        <div class="board-list">
+                            <div class="inner_list">
+                                <a href="/ArticleRead.nhn?clubid=15092639&amp;menuid=533&amp;boardtype=L&amp;page=1&amp;specialmenutype=&amp;userDisplay=15&amp;articleid=2037525" onclick="clickcr(this, 'gnr.notice','','',event);" class="article">
+                                    <span class="head">[규칙]</span>
+                                    ★ WTAC 총 공지사항 (20.11.28)
+                                </a>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="td_name">
+                        <div class="pers_nick_area">
+                            <table role="presentation" cellspacing="0">
+                                <tbody>
+                                    <tr>
+                                        <td class="p-nick">
+                                            <a href="#" class="m-tcol-c" onclick="ui(event, 'wtacmanager',3,'M이치고','15092639','me', 'false', 'true', 'wtac', 'false', '533'); return false;">M이치고</a>
+                                            <span class="mem-level">
+                                                <img src="https://cafe.pstatic.net/levelicon/1/1_999.gif" width="11" height="11">
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <script type="text/javascript">
+                                                                                                    wordBreak($("top_wtacmanager_0"));
+                                                                                                </script>
+                    </td>
+                    <td class="td_date">2020.02.18.</td>
+                    <td class="td_view">33만</td>
+                    <td class="td_likes">2840</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="article-board m-tcol-c">
+        <table>
+            <caption>
+                <span class="blind">게시물 목록</span>
+            </caption>
+            <colgroup>
+                <col style="width: 88px;">
+                <col>
+                <col style="width: 118px">
+                <col style="width: 80px">
+                <col style="width: 68px">
+                <col style="width: 68px">
+            </colgroup>
+            <tbody>
+                <tr>
+                    <td colspan="2" class="td_article">
+                        <div class="board-number">
+                            <div class="inner_number">3725163</div>
+                        </div>
+                        <div class="board-list">
+                            <div class="inner_list">
+                                <a class="article" href="/ArticleRead.nhn?clubid=15092639&amp;page=1&amp;menuid=533&amp;boardtype=L&amp;articleid=3725163&amp;referrerAllArticles=false" onclick="clickcr(this, 'gnr.title','','',event);">
+                                    <span class="head"> [인테리어] </span>
+                                    골치아팠던 인테리어 드디어 다했어요!🤦‍♂️
+                                </a>
+                                <span class="list-i-img">
+                                    <i class="blind">사진</i>
+                                </span>
+                                <a href="/ArticleRead.nhn?clubid=15092639&amp;page=1&amp;menuid=533&amp;boardtype=L&amp;articleid=3725163&amp;referrerAllArticles=false&amp;commentFocus=true" onclick="clickcr(this, 'gnr.cmt','','',event);" class="cmt">
+                                    [<em>8</em>]
+                                </a>
+                                <span class="list-i-new">
+                                    <i class="blind">new</i>
+                                </span>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="td_name">
+                        <div class="pers_nick_area">
+                            <table role="presentation" cellspacing="0">
+                                <tbody>
+                                    <tr>
+                                        <td class="p-nick">
+                                            <a href="#" class="m-tcol-c" onclick="ui(event, 'hyojoo8975',3,'호두머니','15092639','me', 'false', 'true', 'wtac', 'false', '533'); return false;">호두머니</a>
+                                            <span class="mem-level">
+                                                <img src="https://cafe.pstatic.net/levelicon/1/1_110.gif" width="11" height="11">
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <script type="text/javascript">
+                                                                                                    wordBreak($("article_hyojoo8975_0"));
+                                                                                                </script>
+                    </td>
+                    <td class="td_date">16:22</td>
+                    <td class="td_view">108</td>
+                    <td class="td_likes">2</td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="td_article">
+                        <div class="board-number">
+                            <div class="inner_number">3725134</div>
+                        </div>
+                        <div class="board-list">
+                            <div class="inner_list">
+                                <a class="article" href="/ArticleRead.nhn?clubid=15092639&amp;page=1&amp;menuid=533&amp;boardtype=L&amp;articleid=3725134&amp;referrerAllArticles=false" onclick="clickcr(this, 'gnr.title','','',event);">
+                                    <span class="head"> [익스테리어] </span>
+                                    자연풍으로 꾸미고 있어요❕🍂
+                                </a>
+                                <span class="list-i-img">
+                                    <i class="blind">사진</i>
+                                </span>
+                                <a href="/ArticleRead.nhn?clubid=15092639&amp;page=1&amp;menuid=533&amp;boardtype=L&amp;articleid=3725134&amp;referrerAllArticles=false&amp;commentFocus=true" onclick="clickcr(this, 'gnr.cmt','','',event);" class="cmt">
+                                    [<em>3</em>]
+                                </a>
+                                <span class="list-i-new">
+                                    <i class="blind">new</i>
+                                </span>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="td_name">
+                        <div class="pers_nick_area">
+                            <table role="presentation" cellspacing="0">
+                                <tbody>
+                                    <tr>
+                                        <td class="p-nick">
+                                            <a href="#" class="m-tcol-c" onclick="ui(event, 'say02042',3,'droppp','15092639','me', 'false', 'true', 'wtac', 'false', '533'); return false;">droppp</a>
+                                            <span class="mem-level">
+                                                <img src="https://cafe.pstatic.net/levelicon/1/1_120.gif" width="11" height="11">
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <script type="text/javascript">
+                                                                                                    wordBreak($("article_say02042_1"));
+                                                                                                </script>
+                    </td>
+                    <td class="td_date">16:13</td>
+                    <td class="td_view">110</td>
+                    <td class="td_likes">7</td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="td_article">
+                        <div class="board-number">
+                            <div class="inner_number">3724205</div>
+                        </div>
+                        <div class="board-list">
+                            <div class="inner_list">
+                                <a class="article" href="/ArticleRead.nhn?clubid=15092639&amp;page=1&amp;menuid=533&amp;boardtype=L&amp;articleid=3724205&amp;referrerAllArticles=false" onclick="clickcr(this, 'gnr.title','','',event);">
+                                    <span class="head"> [익스테리어] </span>
+                                    해안가를 추수감사절 가구로 꾸몄어용🎨
+                                </a>
+                                <span class="list-i-img">
+                                    <i class="blind">사진</i>
+                                </span>
+                                <a href="/ArticleRead.nhn?clubid=15092639&amp;page=1&amp;menuid=533&amp;boardtype=L&amp;articleid=3724205&amp;referrerAllArticles=false&amp;commentFocus=true" onclick="clickcr(this, 'gnr.cmt','','',event);" class="cmt">
+                                    [<em>5</em>]
+                                </a>
+                                <span class="list-i-new">
+                                    <i class="blind">new</i>
+                                </span>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="td_name">
+                        <div class="pers_nick_area">
+                            <table role="presentation" cellspacing="0">
+                                <tbody>
+                                    <tr>
+                                        <td class="p-nick">
+                                            <a href="#" class="m-tcol-c" onclick="ui(event, 'egghoho',3,'영춘','15092639','me', 'false', 'true', 'wtac', 'false', '533'); return false;">영춘</a>
+                                            <span class="mem-level">
+                                                <img src="https://cafe.pstatic.net/levelicon/1/1_120.gif" width="11" height="11">
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <script type="text/javascript">
+                                                                                                    wordBreak($("article_egghoho_2"));
+                                                                                                </script>
+                    </td>
+                    <td class="td_date">10:22</td>
+                    <td class="td_view">154</td>
+                    <td class="td_likes">1</td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="td_article">
+                        <div class="board-number">
+                            <div class="inner_number">3723392</div>
+                        </div>
+                        <div class="board-list">
+                            <div class="inner_list">
+                                <a class="article" href="/ArticleRead.nhn?clubid=15092639&amp;page=1&amp;menuid=533&amp;boardtype=L&amp;articleid=3723392&amp;referrerAllArticles=false" onclick="clickcr(this, 'gnr.title','','',event);">
+                                    <span class="head"> [인테리어] </span>
+                                    따뜻한느낌의 거실이예요!
+                                </a>
+                                <span class="list-i-img">
+                                    <i class="blind">사진</i>
+                                </span>
+                                <a href="/ArticleRead.nhn?clubid=15092639&amp;page=1&amp;menuid=533&amp;boardtype=L&amp;articleid=3723392&amp;referrerAllArticles=false&amp;commentFocus=true" onclick="clickcr(this, 'gnr.cmt','','',event);" class="cmt">
+                                    [<em>3</em>]
+                                </a>
+                                <span class="list-i-new">
+                                    <i class="blind">new</i>
+                                </span>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="td_name">
+                        <div class="pers_nick_area">
+                            <table role="presentation" cellspacing="0">
+                                <tbody>
+                                    <tr>
+                                        <td class="p-nick">
+                                            <a href="#" class="m-tcol-c" onclick="ui(event, 'wjddo9012',3,'푸루니','15092639','me', 'false', 'true', 'wtac', 'false', '533'); return false;">푸루니</a>
+                                            <span class="mem-level">
+                                                <img src="https://cafe.pstatic.net/levelicon/1/1_120.gif" width="11" height="11">
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <script type="text/javascript">
+                                                                                                    wordBreak($("article_wjddo9012_3"));
+                                                                                                </script>
+                    </td>
+                    <td class="td_date">2020.12.17.</td>
+                    <td class="td_view">138</td>
+                    <td class="td_likes">0</td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="td_article">
+                        <div class="board-number">
+                            <div class="inner_number">3723323</div>
+                        </div>
+                        <div class="board-list">
+                            <div class="inner_list">
+                                <a class="article" href="/ArticleRead.nhn?clubid=15092639&amp;page=1&amp;menuid=533&amp;boardtype=L&amp;articleid=3723323&amp;referrerAllArticles=false" onclick="clickcr(this, 'gnr.title','','',event);">
+                                    <span class="head"> [인테리어] </span>
+                                    따뜻한 느낌의 버려진 숲을 표현해본 방🌳
+                                </a>
+                                <span class="list-i-img">
+                                    <i class="blind">사진</i>
+                                </span>
+                                <a href="/ArticleRead.nhn?clubid=15092639&amp;page=1&amp;menuid=533&amp;boardtype=L&amp;articleid=3723323&amp;referrerAllArticles=false&amp;commentFocus=true" onclick="clickcr(this, 'gnr.cmt','','',event);" class="cmt">
+                                    [<em>2</em>]
+                                </a>
+                                <span class="list-i-new">
+                                    <i class="blind">new</i>
+                                </span>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="td_name">
+                        <div class="pers_nick_area">
+                            <table role="presentation" cellspacing="0">
+                                <tbody>
+                                    <tr>
+                                        <td class="p-nick">
+                                            <a href="#" class="m-tcol-c" onclick="ui(event, 'yoony9043',3,'Bonjour','15092639','me', 'false', 'true', 'wtac', 'false', '533'); return false;">Bonjour</a>
+                                            <span class="mem-level">
+                                                <img src="https://cafe.pstatic.net/levelicon/1/1_110.gif" width="11" height="11">
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <script type="text/javascript">
+                                                                                                    wordBreak($("article_yoony9043_4"));
+                                                                                                </script>
+                    </td>
+                    <td class="td_date">2020.12.17.</td>
+                    <td class="td_view">109</td>
+                    <td class="td_likes">2</td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="td_article">
+                        <div class="board-number">
+                            <div class="inner_number">3723140</div>
+                        </div>
+                        <div class="board-list">
+                            <div class="inner_list">
+                                <a class="article" href="/ArticleRead.nhn?clubid=15092639&amp;page=1&amp;menuid=533&amp;boardtype=L&amp;articleid=3723140&amp;referrerAllArticles=false" onclick="clickcr(this, 'gnr.title','','',event);">
+                                    <span class="head"> [익스테리어] </span>
+                                    내가 크고 둥근 곶을 선호했던 이유2
+                                </a>
+                                <span class="list-i-img">
+                                    <i class="blind">사진</i>
+                                </span>
+                                <span class="list-i-link">
+                                    <i class="blind">링크</i>
+                                </span>
+                                <a href="/ArticleRead.nhn?clubid=15092639&amp;page=1&amp;menuid=533&amp;boardtype=L&amp;articleid=3723140&amp;referrerAllArticles=false&amp;commentFocus=true" onclick="clickcr(this, 'gnr.cmt','','',event);" class="cmt">
+                                    [<em>8</em>]
+                                </a>
+                                <span class="list-i-new">
+                                    <i class="blind">new</i>
+                                </span>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="td_name">
+                        <div class="pers_nick_area">
+                            <table role="presentation" cellspacing="0">
+                                <tbody>
+                                    <tr>
+                                        <td class="p-nick">
+                                            <a href="#" class="m-tcol-c" onclick="ui(event, '4521986',3,'김루디','15092639','me', 'false', 'true', 'wtac', 'false', '533'); return false;">김루디</a>
+                                            <span class="mem-level">
+                                                <img src="https://cafe.pstatic.net/levelicon/1/1_130.gif" width="11" height="11">
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <script type="text/javascript">
+                                                                                                    wordBreak($("article_4521986_5"));
+                                                                                                </script>
+                    </td>
+                    <td class="td_date">2020.12.17.</td>
+                    <td class="td_view">260</td>
+                    <td class="td_likes">4</td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="td_article">
+                        <div class="board-number">
+                            <div class="inner_number">3722824</div>
+                        </div>
+                        <div class="board-list">
+                            <div class="inner_list">
+                                <a class="article" href="/ArticleRead.nhn?clubid=15092639&amp;page=1&amp;menuid=533&amp;boardtype=L&amp;articleid=3722824&amp;referrerAllArticles=false" onclick="clickcr(this, 'gnr.title','','',event);">
+                                    <span class="head"> [인테리어] </span>
+                                    🦋떠나간 주민의 방을 만들어 주었어요..😭
+                                </a>
+                                <span class="list-i-img">
+                                    <i class="blind">사진</i>
+                                </span>
+                                <a href="/ArticleRead.nhn?clubid=15092639&amp;page=1&amp;menuid=533&amp;boardtype=L&amp;articleid=3722824&amp;referrerAllArticles=false&amp;commentFocus=true" onclick="clickcr(this, 'gnr.cmt','','',event);" class="cmt">
+                                    [<em>6</em>]
+                                </a>
+                                <span class="list-i-new">
+                                    <i class="blind">new</i>
+                                </span>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="td_name">
+                        <div class="pers_nick_area">
+                            <table role="presentation" cellspacing="0">
+                                <tbody>
+                                    <tr>
+                                        <td class="p-nick">
+                                            <a href="#" class="m-tcol-c" onclick="ui(event, '8utterflykis2',3,'바다나비','15092639','me', 'false', 'true', 'wtac', 'false', '533'); return false;">바다나비</a>
+                                            <span class="mem-level">
+                                                <img src="https://cafe.pstatic.net/levelicon/1/1_110.gif" width="11" height="11">
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <script type="text/javascript">
+                                                                                                    wordBreak($("article_8utterflykis2_6"));
+                                                                                                </script>
+                    </td>
+                    <td class="td_date">2020.12.17.</td>
+                    <td class="td_view">205</td>
+                    <td class="td_likes">3</td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="td_article">
+                        <div class="board-number">
+                            <div class="inner_number">3722547</div>
+                        </div>
+                        <div class="board-list">
+                            <div class="inner_list">
+                                <a class="article" href="/ArticleRead.nhn?clubid=15092639&amp;page=1&amp;menuid=533&amp;boardtype=L&amp;articleid=3722547&amp;referrerAllArticles=false" onclick="clickcr(this, 'gnr.title','','',event);">
+                                    <span class="head"> [익스테리어] </span>
+                                    루나리스섬의 캠핑장을 소개합니다❤️
+                                </a>
+                                <span class="list-i-img">
+                                    <i class="blind">사진</i>
+                                </span>
+                                <span class="list-i-new">
+                                    <i class="blind">new</i>
+                                </span>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="td_name">
+                        <div class="pers_nick_area">
+                            <table role="presentation" cellspacing="0">
+                                <tbody>
+                                    <tr>
+                                        <td class="p-nick">
+                                            <a href="#" class="m-tcol-c" onclick="ui(event, 'slpchristin',3,'루나리스섬','15092639','me', 'false', 'true', 'wtac', 'false', '533'); return false;">루나리스섬</a>
+                                            <span class="mem-level">
+                                                <img src="https://cafe.pstatic.net/levelicon/1/1_110.gif" width="11" height="11">
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <script type="text/javascript">
+                                                                                                    wordBreak($("article_slpchristin_7"));
+                                                                                                </script>
+                    </td>
+                    <td class="td_date">2020.12.17.</td>
+                    <td class="td_view">117</td>
+                    <td class="td_likes">1</td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="td_article">
+                        <div class="board-number">
+                            <div class="inner_number">3722336</div>
+                        </div>
+                        <div class="board-list">
+                            <div class="inner_list">
+                                <a class="article" href="/ArticleRead.nhn?clubid=15092639&amp;page=1&amp;menuid=533&amp;boardtype=L&amp;articleid=3722336&amp;referrerAllArticles=false" onclick="clickcr(this, 'gnr.title','','',event);">
+                                    <span class="head"> [익스테리어] </span>
+                                    바닷가에 있는 하얀 집
+                                </a>
+                                <span class="list-i-img">
+                                    <i class="blind">사진</i>
+                                </span>
+                                <a href="/ArticleRead.nhn?clubid=15092639&amp;page=1&amp;menuid=533&amp;boardtype=L&amp;articleid=3722336&amp;referrerAllArticles=false&amp;commentFocus=true" onclick="clickcr(this, 'gnr.cmt','','',event);" class="cmt">
+                                    [<em>5</em>]
+                                </a>
+                                <span class="list-i-new">
+                                    <i class="blind">new</i>
+                                </span>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="td_name">
+                        <div class="pers_nick_area">
+                            <table role="presentation" cellspacing="0">
+                                <tbody>
+                                    <tr>
+                                        <td class="p-nick">
+                                            <a href="#" class="m-tcol-c" onclick="ui(event, 'lovem2now',3,'물의 아이','15092639','me', 'false', 'true', 'wtac', 'false', '533'); return false;">물의 아이</a>
+                                            <span class="mem-level">
+                                                <img src="https://cafe.pstatic.net/levelicon/1/1_120.gif" width="11" height="11">
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <script type="text/javascript">
+                                                                                                    wordBreak($("article_lovem2now_8"));
+                                                                                                </script>
+                    </td>
+                    <td class="td_date">2020.12.17.</td>
+                    <td class="td_view">263</td>
+                    <td class="td_likes">7</td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="td_article">
+                        <div class="board-number">
+                            <div class="inner_number">3721844</div>
+                        </div>
+                        <div class="board-list">
+                            <div class="inner_list">
+                                <a class="article" href="/ArticleRead.nhn?clubid=15092639&amp;page=1&amp;menuid=533&amp;boardtype=L&amp;articleid=3721844&amp;referrerAllArticles=false" onclick="clickcr(this, 'gnr.title','','',event);">
+                                    <span class="head"> [익스테리어] </span>
+                                    주민대표 집터 다시 만들어봤어요🏡🎄🌨
+                                </a>
+                                <span class="list-i-img">
+                                    <i class="blind">사진</i>
+                                </span>
+                                <a href="/ArticleRead.nhn?clubid=15092639&amp;page=1&amp;menuid=533&amp;boardtype=L&amp;articleid=3721844&amp;referrerAllArticles=false&amp;commentFocus=true" onclick="clickcr(this, 'gnr.cmt','','',event);" class="cmt">
+                                    [<em>10</em>]
+                                </a>
+                                <span class="list-i-new">
+                                    <i class="blind">new</i>
+                                </span>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="td_name">
+                        <div class="pers_nick_area">
+                            <table role="presentation" cellspacing="0">
+                                <tbody>
+                                    <tr>
+                                        <td class="p-nick">
+                                            <a href="#" class="m-tcol-c" onclick="ui(event, 'jinkyung87',3,'블라섬 핑크','15092639','me', 'false', 'true', 'wtac', 'false', '533'); return false;">블라섬 핑크</a>
+                                            <span class="mem-level">
+                                                <img src="https://cafe.pstatic.net/levelicon/1/1_110.gif" width="11" height="11">
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <script type="text/javascript">
+                                                                                                    wordBreak($("article_jinkyung87_9"));
+                                                                                                </script>
+                    </td>
+                    <td class="td_date">2020.12.17.</td>
+                    <td class="td_view">320</td>
+                    <td class="td_likes">8</td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="td_article">
+                        <div class="board-number">
+                            <div class="inner_number">3721707</div>
+                        </div>
+                        <div class="board-list">
+                            <div class="inner_list">
+                                <a class="article" href="/ArticleRead.nhn?clubid=15092639&amp;page=1&amp;menuid=533&amp;boardtype=L&amp;articleid=3721707&amp;referrerAllArticles=false" onclick="clickcr(this, 'gnr.title','','',event);">
+                                    <span class="head"> [익스테리어] </span>
+                                    유럽풍 강변 길거리 만들어 봤어요!
+                                </a>
+                                <span class="list-i-img">
+                                    <i class="blind">사진</i>
+                                </span>
+                                <span class="list-i-link">
+                                    <i class="blind">링크</i>
+                                </span>
+                                <a href="/ArticleRead.nhn?clubid=15092639&amp;page=1&amp;menuid=533&amp;boardtype=L&amp;articleid=3721707&amp;referrerAllArticles=false&amp;commentFocus=true" onclick="clickcr(this, 'gnr.cmt','','',event);" class="cmt">
+                                    [<em>4</em>]
+                                </a>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="td_name">
+                        <div class="pers_nick_area">
+                            <table role="presentation" cellspacing="0">
+                                <tbody>
+                                    <tr>
+                                        <td class="p-nick">
+                                            <a href="#" class="m-tcol-c" onclick="ui(event, 'littledrumer',3,'로맹','15092639','me', 'false', 'true', 'wtac', 'false', '533'); return false;">로맹</a>
+                                            <span class="mem-level">
+                                                <img src="https://cafe.pstatic.net/levelicon/1/1_110.gif" width="11" height="11">
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <script type="text/javascript">
+                                                                                                    wordBreak($("article_littledrumer_10"));
+                                                                                                </script>
+                    </td>
+                    <td class="td_date">2020.12.17.</td>
+                    <td class="td_view">196</td>
+                    <td class="td_likes">3</td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="td_article">
+                        <div class="board-number">
+                            <div class="inner_number">3721543</div>
+                        </div>
+                        <div class="board-list">
+                            <div class="inner_list">
+                                <a class="article" href="/ArticleRead.nhn?clubid=15092639&amp;page=1&amp;menuid=533&amp;boardtype=L&amp;articleid=3721543&amp;referrerAllArticles=false" onclick="clickcr(this, 'gnr.title','','',event);">
+                                    <span class="head"> [크리에이터] </span>
+                                    폭포 만들어볼겸 요리조리 파면서 한번 해봣어요 ㅎㅎ
+                                </a>
+                                <span class="list-i-img">
+                                    <i class="blind">사진</i>
+                                </span>
+                                <a href="/ArticleRead.nhn?clubid=15092639&amp;page=1&amp;menuid=533&amp;boardtype=L&amp;articleid=3721543&amp;referrerAllArticles=false&amp;commentFocus=true" onclick="clickcr(this, 'gnr.cmt','','',event);" class="cmt">
+                                    [<em>10</em>]
+                                </a>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="td_name">
+                        <div class="pers_nick_area">
+                            <table role="presentation" cellspacing="0">
+                                <tbody>
+                                    <tr>
+                                        <td class="p-nick">
+                                            <a href="#" class="m-tcol-c" onclick="ui(event, 'thdus1254',3,'금쏘','15092639','me', 'false', 'true', 'wtac', 'false', '533'); return false;">금쏘</a>
+                                            <span class="mem-level">
+                                                <img src="https://cafe.pstatic.net/levelicon/1/1_120.gif" width="11" height="11">
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <script type="text/javascript">
+                                                                                                    wordBreak($("article_thdus1254_11"));
+                                                                                                </script>
+                    </td>
+                    <td class="td_date">2020.12.17.</td>
+                    <td class="td_view">276</td>
+                    <td class="td_likes">7</td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="td_article">
+                        <div class="board-number">
+                            <div class="inner_number">3721170</div>
+                        </div>
+                        <div class="board-list">
+                            <div class="inner_list">
+                                <a class="article" href="/ArticleRead.nhn?clubid=15092639&amp;page=1&amp;menuid=533&amp;boardtype=L&amp;articleid=3721170&amp;referrerAllArticles=false" onclick="clickcr(this, 'gnr.title','','',event);">
+                                    <span class="head"> [인테리어] </span>
+                                    신비하게 꾸며보려..했지만..
+                                </a>
+                                <span class="list-i-img">
+                                    <i class="blind">사진</i>
+                                </span>
+                                <a href="/ArticleRead.nhn?clubid=15092639&amp;page=1&amp;menuid=533&amp;boardtype=L&amp;articleid=3721170&amp;referrerAllArticles=false&amp;commentFocus=true" onclick="clickcr(this, 'gnr.cmt','','',event);" class="cmt">
+                                    [<em>2</em>]
+                                </a>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="td_name">
+                        <div class="pers_nick_area">
+                            <table role="presentation" cellspacing="0">
+                                <tbody>
+                                    <tr>
+                                        <td class="p-nick">
+                                            <a href="#" class="m-tcol-c" onclick="ui(event, 'smiletpghk',3,'콩땅','15092639','me', 'false', 'true', 'wtac', 'false', '533'); return false;">콩땅</a>
+                                            <span class="mem-level">
+                                                <img src="https://cafe.pstatic.net/levelicon/1/1_110.gif" width="11" height="11">
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <script type="text/javascript">
+                                                                                                    wordBreak($("article_smiletpghk_12"));
+                                                                                                </script>
+                    </td>
+                    <td class="td_date">2020.12.17.</td>
+                    <td class="td_view">115</td>
+                    <td class="td_likes">0</td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="td_article">
+                        <div class="board-number">
+                            <div class="inner_number">3720846</div>
+                        </div>
+                        <div class="board-list">
+                            <div class="inner_list">
+                                <a class="article" href="/ArticleRead.nhn?clubid=15092639&amp;page=1&amp;menuid=533&amp;boardtype=L&amp;articleid=3720846&amp;referrerAllArticles=false" onclick="clickcr(this, 'gnr.title','','',event);">
+                                    <span class="head"> [익스테리어] </span>
+                                    섬에 큰 호수를 만들어봤어요❗️
+                                </a>
+                                <span class="list-i-img">
+                                    <i class="blind">사진</i>
+                                </span>
+                                <a href="/ArticleRead.nhn?clubid=15092639&amp;page=1&amp;menuid=533&amp;boardtype=L&amp;articleid=3720846&amp;referrerAllArticles=false&amp;commentFocus=true" onclick="clickcr(this, 'gnr.cmt','','',event);" class="cmt">
+                                    [<em>14</em>]
+                                </a>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="td_name">
+                        <div class="pers_nick_area">
+                            <table role="presentation" cellspacing="0">
+                                <tbody>
+                                    <tr>
+                                        <td class="p-nick">
+                                            <a href="#" class="m-tcol-c" onclick="ui(event, 'chansoo1029',3,'란구','15092639','me', 'false', 'true', 'wtac', 'false', '533'); return false;">란구</a>
+                                            <span class="mem-level">
+                                                <img src="https://cafe.pstatic.net/levelicon/1/1_120.gif" width="11" height="11">
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <script type="text/javascript">
+                                                                                                    wordBreak($("article_chansoo1029_13"));
+                                                                                                </script>
+                    </td>
+                    <td class="td_date">2020.12.17.</td>
+                    <td class="td_view">280</td>
+                    <td class="td_likes">8</td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="td_article">
+                        <div class="board-number">
+                            <div class="inner_number">3720500</div>
+                        </div>
+                        <div class="board-list">
+                            <div class="inner_list">
+                                <a class="article" href="/ArticleRead.nhn?clubid=15092639&amp;page=1&amp;menuid=533&amp;boardtype=L&amp;articleid=3720500&amp;referrerAllArticles=false" onclick="clickcr(this, 'gnr.title','','',event);"> 겨울이 오는 섬 두리카지노! </a>
+                                <span class="list-i-img">
+                                    <i class="blind">사진</i>
+                                </span>
+                                <a href="/ArticleRead.nhn?clubid=15092639&amp;page=1&amp;menuid=533&amp;boardtype=L&amp;articleid=3720500&amp;referrerAllArticles=false&amp;commentFocus=true" onclick="clickcr(this, 'gnr.cmt','','',event);" class="cmt">
+                                    [<em>3</em>]
+                                </a>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="td_name">
+                        <div class="pers_nick_area">
+                            <table role="presentation" cellspacing="0">
+                                <tbody>
+                                    <tr>
+                                        <td class="p-nick">
+                                            <a href="#" class="m-tcol-c" onclick="ui(event, 'er011',3,'브량','15092639','me', 'false', 'true', 'wtac', 'false', '533'); return false;">브량</a>
+                                            <span class="mem-level">
+                                                <img src="https://cafe.pstatic.net/levelicon/1/1_110.gif" width="11" height="11">
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <script type="text/javascript">
+                                                                                                    wordBreak($("article_er011_14"));
+                                                                                                </script>
+                    </td>
+                    <td class="td_date">2020.12.17.</td>
+                    <td class="td_view">104</td>
+                    <td class="td_likes">1</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="post_btns">
+        <div class="fr">
+            <a href="#" id="writeFormBtn" onclick="clickcr(this,'abt.wrtlist', '', '', event);" class="btn_type1 post_write _rosRestrict">글쓰기</a>
+        </div>
+    </div>
+    <form name="frmDelete" method="post" action="/ArticleDelete.nhn" style="display: none">
+        <input type="hidden" name="clubid" value="15092639">
+        <input type="hidden" name="menuid" value="533">
+        <input type="hidden" name="boardtype" value="L">
+        <input type="hidden" name="page" value="1">
+        <input type="hidden" name="articleid">
+        <input type="hidden" name="userDisplay" value="15">
+    </form>
+    <div class="prev-next">
+        <span class="blind">페이지 네비게이션</span>
+        <a href="/ArticleList.nhn?search.clubid=15092639&amp;search.menuid=533&amp;search.boardtype=L&amp;search.totalCount=151&amp;search.page=1" class="on">1</a>
+        <a href="/ArticleList.nhn?search.clubid=15092639&amp;search.menuid=533&amp;search.boardtype=L&amp;search.totalCount=151&amp;search.page=2">2</a>
+        <a href="/ArticleList.nhn?search.clubid=15092639&amp;search.menuid=533&amp;search.boardtype=L&amp;search.totalCount=151&amp;search.page=3">3</a>
+        <a href="/ArticleList.nhn?search.clubid=15092639&amp;search.menuid=533&amp;search.boardtype=L&amp;search.totalCount=151&amp;search.page=4">4</a>
+        <a href="/ArticleList.nhn?search.clubid=15092639&amp;search.menuid=533&amp;search.boardtype=L&amp;search.totalCount=151&amp;search.page=5">5</a>
+        <a href="/ArticleList.nhn?search.clubid=15092639&amp;search.menuid=533&amp;search.boardtype=L&amp;search.totalCount=151&amp;search.page=6">6</a>
+        <a href="/ArticleList.nhn?search.clubid=15092639&amp;search.menuid=533&amp;search.boardtype=L&amp;search.totalCount=151&amp;search.page=7">7</a>
+        <a href="/ArticleList.nhn?search.clubid=15092639&amp;search.menuid=533&amp;search.boardtype=L&amp;search.totalCount=151&amp;search.page=8">8</a>
+        <a href="/ArticleList.nhn?search.clubid=15092639&amp;search.menuid=533&amp;search.boardtype=L&amp;search.totalCount=151&amp;search.page=9">9</a>
+        <a href="/ArticleList.nhn?search.clubid=15092639&amp;search.menuid=533&amp;search.boardtype=L&amp;search.totalCount=151&amp;search.page=10">10</a>
+        <a href="/ArticleList.nhn?search.clubid=15092639&amp;search.menuid=533&amp;search.boardtype=L&amp;search.totalCount=151&amp;search.page=11" class="pgR">
+            <span class="m-tcol-c">다음</span>
+        </a>
+    </div>
+    <iframe name="wordchk" id="wordchk" width="0" height="0" frameborder="0" style="display: none" title="빈프레임"></iframe>
+    <div class="list-search">
+        <form name="frmSearch" action="" onsubmit="return false;">
+            <input type="hidden" name="searchdate" id="searchdate" value="all">
+            <div class="select_component" style="width: 144px" id="divSearchDate">
+                <a href="#" onclick="nhn.search.toggleBoxLayer('divSearchDate');return false;" id="currentSearchDate" class="select_box">전체기간</a>
+                <ul class="select_list" style="width: 291px; max-height: 295px;">
+                    <li>
+                        <a href="#" onclick="applySearchOption('searchdate', 'all', 'currentSearchDate', this);nhn.search.toggleBoxLayer('divSearchDate');return false;">전체기간</a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="applySearchOption('searchdate', '1d', 'currentSearchDate', this);nhn.search.toggleBoxLayer('divSearchDate');return false;">1일</a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="applySearchOption('searchdate', '1w', 'currentSearchDate', this);nhn.search.toggleBoxLayer('divSearchDate');return false;">1주</a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="applySearchOption('searchdate', '1m', 'currentSearchDate', this);nhn.search.toggleBoxLayer('divSearchDate');return false;">1개월</a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="applySearchOption('searchdate', '6m', 'currentSearchDate', this);nhn.search.toggleBoxLayer('divSearchDate');return false;">6개월</a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="applySearchOption('searchdate', '1y', 'currentSearchDate', this);nhn.search.toggleBoxLayer('divSearchDate');return false;">1년</a>
+                    </li>
+                    <li id="date_input_area">
+                        <div id="date_enter" class="date_enter">
+                            <span id="explain_period" class="tit">기간 입력</span>
+                            <input type="text" id="input_1" maxlength="10" value="2017-12-26">
+                            <input type="text" id="input_2" maxlength="10" value="2018-01-12">
+                            <button id="btn_set" class="btn_set">설정</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <input type="hidden" name="searchBy" id="searchBy" value="">
+            <div class="select_component" style="width: 144px" id="divSearchBy">
+                <a href="#" onclick="nhn.search.toggleBoxLayer('divSearchBy');return false;" id="currentSearchBy" class="select_box">제목+내용</a>
+                <ul class="select_list">
+                    <li>
+                        <a href="#" onclick="applySearchOption('searchBy', '0', 'currentSearchBy', this);nhn.search.toggleBoxLayer('divSearchBy');return false;">제목+내용</a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="applySearchOption('searchBy', '1', 'currentSearchBy', this);nhn.search.toggleBoxLayer('divSearchBy');return false;">제목만</a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="applySearchOption('searchBy', '3', 'currentSearchBy', this);nhn.search.toggleBoxLayer('divSearchBy');return false;">글작성자</a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="applySearchOption('searchBy', '4', 'currentSearchBy', this);nhn.search.toggleBoxLayer('divSearchBy');return false;">댓글내용</a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="applySearchOption('searchBy', '5', 'currentSearchBy', this);nhn.search.toggleBoxLayer('divSearchBy');return false;">댓글작성자</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="input_search_area">
+                <div class="input_component" style="width: 200px">
+                    <input type="text" id="query" name="query" placeholder="검색어를 입력해주세요" value="" onkeydown="if (event.keyCode == 13) {nhn.search.goSearch(this,false);clickcr(this, 'sch.bsearch','','',event)}">
+                </div>
+                <button onclick="nhn.search.goSearch(this,false);clickcr(this, 'sch.bsearch','','',event); return false;" class="btn-search-green">검색</button>
+            </div>
+        </form>
+    </div>
+</div>
+</html>
