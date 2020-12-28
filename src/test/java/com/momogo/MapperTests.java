@@ -18,7 +18,7 @@ class MapperTests {
     @Test
     public void testOfInsert() {
         member params = new member();
-        params.setMemberId("멤버아이디");
+        params.setMemberId("ㅁ니아럼ㄴ");
         params.setMemberPw("12345");
         params.setMemberName("김박");
         params.setMemberEmail("sdf@email.com");

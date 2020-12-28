@@ -52,7 +52,7 @@
     </sql>
 
 
-    <!-- 데이터 저장 기능 정의 (회원가입) -->
+    <!-- 회원가입 -->
     <insert
         id="insertMember"
         parameterType="member"
@@ -60,16 +60,8 @@
         keyProperty="memberId">
 
         INSERT INTO member (
-        memberId,
-        memberPw,
-        memberName,
-        memberEmail,
-        memberNick,
-        memberPhone,
-        memberAdd,
-        memberCreate,
-        memberUpdate,
-        memberDelete)
+        
+        <include refid="memberId" />)
 
         VALUES (
         #{memberId},
