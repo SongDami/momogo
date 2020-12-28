@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mappers.communityMapper">
+
+	<sql id='communityId'>
+		comId,
+		comTitle,
+		comContent,
+		comCreate,
+		comUpdate,
+		comDelete
+	</sql>
+	
+	<insert 
+		id="insertCommunity" 
+		parameterType="community"
+		useGeneratedKeys="true"
+        keyProperty="comId">
+        
+        INSERT INTO community (<include refid="communityId" />)
+        VALUES (
+        	#{comId},
+        	#{comTitle},
+        	#{comContent},
+        	now(),
+        	now(),
+        	"9999-12-31"
+        )
+	</insert>
+	
+	<update id="updateCommunity" parameterType="community">
+		UPDATE community
+		SET
+			comTitle = #{comTitle},
+			comContent = #{comContent},
+			comUpdate = NOW()
+		WHERE comId = #{comId}
+	</update>
+
+	<delete id="deleteCommunity" parameterType="long">
+		DELETE FROM community
+		WHERE comId = #{comId}
+	</delete>
+	
+	<select id="selectCommunityDetail" parameterType="long" resultType="Community">
+		SELECT
+			<include refid="communityId" />
+		FROM community
+		WHERE comId = #{comId}
+	</select>
+	
+	<select id="selectCommunityList" parameterType="community" resultType="Community">
+		SELECT
+			<include refid="communityId" />
+		FROM community
+		WHERE
+			delete_yn = 'N'
+		ORDER BY
+			notice_yn ASC,
+			idx DESC,
+			insert_time DESC
+	</select>
+
+	<select id="selectCommunityTotalCount" parameterType="community" resultType="int">
+		SELECT COUNT(comId)
+		FROM community
+	</select>
+</mapper>
