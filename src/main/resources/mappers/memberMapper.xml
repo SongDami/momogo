@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.momogo.mapper.memberMapper">
+
+    <!-- Beans의 멤버변수(property)이름과 대상 테이블의 컬럼(column)을 연결한다. -->
+    <!-- <resultMap
+        id="memberMapper"
+        type="com.momogo.model.member">
+        <result
+            property="memberId"
+            column="memberId" />
+        <result
+            property="memberPw"
+            column="memberPw" />
+        <result
+            property="memberName"
+            column="memberName" />
+        <result
+            property="memberEmail"
+            column="memberEmail" />
+        <result
+            property="memberNick"
+            column="memberNick" />
+        <result
+            property="memberPhone"
+            column="memberPhone" />
+        <result
+            property="memberAdd"
+            column="memberAdd" />
+        <result
+            property="memberCreate"
+            column="memberCreate" />
+        <result
+            property="memberUpdate"
+            column="memberUpdate" />
+        <result
+            property="memberDelete"
+            column="memberDelete" />
+    </resultMap> -->
+        <sql id="memberId">
+        memberId,
+        memberPw,
+        memberName,
+        memberEmail,
+        memberNick,
+        memberPhone,
+        memberAdd,
+        memberCreate,
+        memberUpdate,
+        memberDelete
+    </sql>
+
+
+    <!-- 데이터 저장 기능 정의 (회원가입) -->
+    <insert
+        id="insert"
+        parameterType="member"
+        useGeneratedKeys="true"
+        keyProperty="memberId">
+
+        INSERT INTO member (
+        memberId,
+        memberPw,
+        memberName,
+        memberEmail,
+        memberNick,
+        memberPhone,
+        memberAdd,
+        memberCreate,
+        memberUpdate,
+        memberDelete)
+
+        VALUES (
+        #{memberId},
+        MD5(#{memberPw}),
+        #{memberName},
+        #{memberEmail},
+        #{memberNick},
+        #{memberPhone},
+        #{memberAdd},
+        now(),
+        now(),
+        "9999-12-31"
+
+        )
+
+
+    </insert>
+
+
+
+
+
+
+</mapper>
