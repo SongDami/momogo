@@ -49,7 +49,7 @@
         memberCreate,
         memberUpdate,
         memberDelete
-    </sql>
+        </sql>
 
 
     <!-- 회원가입 -->
@@ -74,11 +74,18 @@
         now(),
         now(),
         "9999-12-31"
-
         )
-
-
     </insert>
+    
+
+    
+    
+<!--     <select id="selectMember" parameterType="long" resultType="member">
+        SELECT
+            <include refid="memberId" />
+        FROM
+            member
+    </select> -->
 
 
 
