@@ -54,7 +54,7 @@
 
     <!-- 데이터 저장 기능 정의 (회원가입) -->
     <insert
-        id="insert"
+        id="insertMember"
         parameterType="member"
         useGeneratedKeys="true"
         keyProperty="memberId">

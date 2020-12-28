@@ -28,7 +28,7 @@ class MapperTests {
         
         
 
-        int result = memberMapper.insert(params);
+        int result = memberMapper.insertMember(params);
         System.out.println("**결과**"+result);
 
     }
