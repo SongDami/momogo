@@ -80,12 +80,12 @@
 
     
     
-<!--     <select id="selectMember" parameterType="long" resultType="member">
+    <select id="selectMember" parameterType="long" resultType="member">
         SELECT
             <include refid="memberId" />
-        FROM
-            member
-    </select> -->
+        FROM member
+        WHERE memberId = #{memberId}
+    </select>
 
 
 

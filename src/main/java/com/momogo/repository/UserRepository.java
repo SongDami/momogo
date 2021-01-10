@@ -8,4 +8,5 @@ import com.momogo.model.UserInfo;
 
 public interface UserRepository extends JpaRepository<UserInfo, Long> {
 	Optional<UserInfo> findByEmail(String email);
+//	Optional<UserInfo> findById(String id);
 }

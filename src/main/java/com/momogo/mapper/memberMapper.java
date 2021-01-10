@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.apache.ibatis.annotations.Mapper;
 
+import com.momogo.model.UserInfo;
 import com.momogo.model.member;
 
 @Mapper
@@ -11,7 +12,7 @@ public interface memberMapper {
     // 회원 가입
     public int insertMember(member params);
     // 회원 select
-    public member selectMember(Long idx);
+    public UserInfo selectMember(String idx);
     // 회원 수정
     public int updateMember(member params);
     // 회원 탈퇴

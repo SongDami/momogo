@@ -21,4 +21,10 @@ public class memberController {
         return "join";
     }
 
+    @GetMapping(value="/login.do")
+    public String login(Model model) {
+        
+
+        return "login";
+    }
 }
